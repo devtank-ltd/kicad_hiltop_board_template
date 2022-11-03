@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Devtank_PCB_Lib)(type KiCad)(uri ${KIPRJMOD}/../common/Devtank_PCB_Lib.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,4886 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 11
+Title "Sensi Board"
+Date "2021-02-15"
+Rev "B"
+Comp "Devtank Ltd"
+Comment1 "Part No: 304-007"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP6
+U 1 1 5BE39751
+P 14125 12550
+F 0 "TP6" V 14125 12725 50  0000 L CNN
+F 1 "Test_Point" H 14183 12579 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 14325 12550 50  0001 C CNN
+F 3 "~" H 14325 12550 50  0001 C CNN
+	1    14125 12550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Conn_03x32_DIN41612-Devtank J3
+U 1 1 5C5BC2B2
+P 18550 2725
+F 0 "J3" H 18475 975 50  0000 L CNN
+F 1 "Conn_03x32_DIN41612" H 18450 850 50  0000 L CNN
+F 2 "Devtank_PCB_Lib:Socket_DIN41612-CaseC1-full-Male-96Pin-3rows_correct" H 18550 2725 50  0001 C CNN
+F 3 "~" H 18550 2725 50  0001 C CNN
+F 4 "717-002" H 5050 -400 50  0001 C CNN "Devtank"
+	1    18550 2725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensi_Board-rescue:Conn_03x32_DIN41612-Devtank J3
+U 3 1 5C5BC6AD
+P 21875 2725
+F 0 "J3" H 21825 925 50  0000 L CNN
+F 1 "Conn_03x32_DIN41612" H 21850 825 50  0000 L CNN
+F 2 "Devtank_PCB_Lib:Socket_DIN41612-CaseC1-full-Male-96Pin-3rows_correct" H 21875 2725 50  0001 C CNN
+F 3 "~" H 21875 2725 50  0001 C CNN
+F 4 "717-002" H 5050 -400 50  0001 C CNN "Devtank"
+	3    21875 2725
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 13150 3425 1875 650 
+U 5C60B9FB
+F0 "RelayOutputs" 60
+F1 "RelayOutputs.sch" 60
+F2 "CH1_OUT" I L 13150 3600 60 
+F3 "OUT1_COM" O R 15025 3600 60 
+F4 "OUT1_NO" O R 15025 3750 60 
+F5 "OUT1_NC" O R 15025 3900 60 
+$EndSheet
+Wire Wire Line
+	15025 3600 15625 3600
+Wire Wire Line
+	15025 3750 15850 3750
+Wire Wire Line
+	13150 3600 12475 3600
+$Comp
+L Devtank:INA250 U1
+U 1 1 5C43559D
+P 14600 2550
+F 0 "U1" H 14600 3115 50  0000 C CNN
+F 1 "INA250A4" H 14600 3024 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 14600 2950 50  0001 C CNN
+F 3 "" H 14650 3000 50  0001 C CNN
+F 4 "119-002" H -5625 -6400 50  0001 C CNN "Devtank"
+	1    14600 2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13600 1950 13600 2000
+Wire Wire Line
+	13600 2200 13925 2200
+Wire Wire Line
+	14100 2300 13925 2300
+Wire Wire Line
+	13925 2300 13925 2200
+Connection ~ 13925 2200
+Wire Wire Line
+	13925 2200 14100 2200
+Wire Wire Line
+	14100 2400 13925 2400
+Wire Wire Line
+	13925 2400 13925 2300
+Connection ~ 13925 2300
+Wire Wire Line
+	15100 2200 15325 2200
+Wire Wire Line
+	15625 2200 15625 2625
+Wire Wire Line
+	15100 2400 15325 2400
+Wire Wire Line
+	15325 2400 15325 2300
+Connection ~ 15325 2200
+Wire Wire Line
+	15325 2200 15625 2200
+Wire Wire Line
+	15100 2300 15325 2300
+Connection ~ 15325 2300
+Wire Wire Line
+	15325 2300 15325 2200
+Wire Wire Line
+	15100 2500 15200 2500
+Wire Wire Line
+	15200 2500 15200 2600
+Wire Wire Line
+	15200 2600 15100 2600
+Wire Wire Line
+	14100 2500 13975 2500
+Wire Wire Line
+	13975 2500 13975 2600
+Wire Wire Line
+	13975 2600 14100 2600
+$Comp
+L power:GND #PWR032
+U 1 1 5C551D09
+P 13925 3000
+F 0 "#PWR032" H 13925 2750 50  0001 C CNN
+F 1 "GND" H 13930 2827 50  0000 C CNN
+F 2 "" H 13925 3000 50  0001 C CNN
+F 3 "" H 13925 3000 50  0001 C CNN
+	1    13925 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 2700 13925 2700
+Wire Wire Line
+	13925 2700 13925 3000
+Wire Wire Line
+	14100 2800 13600 2800
+Wire Wire Line
+	13600 2800 13600 2600
+$Comp
+L power:GND #PWR039
+U 1 1 5C58E681
+P 15275 3000
+F 0 "#PWR039" H 15275 2750 50  0001 C CNN
+F 1 "GND" H 15280 2827 50  0000 C CNN
+F 2 "" H 15275 3000 50  0001 C CNN
+F 3 "" H 15275 3000 50  0001 C CNN
+	1    15275 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15275 3000 15275 2900
+Wire Wire Line
+	15275 2700 15100 2700
+Wire Wire Line
+	15100 2900 15275 2900
+Connection ~ 15275 2900
+Wire Wire Line
+	15275 2900 15275 2800
+Wire Wire Line
+	15100 2800 15275 2800
+Connection ~ 15275 2800
+Wire Wire Line
+	15275 2800 15275 2700
+Wire Wire Line
+	14100 2900 13300 2900
+Text Label 13300 2900 0    60   ~ 0
+I_MON
+$Comp
+L Sensi_Board-rescue:C-device C9
+U 1 1 5C694900
+P 13300 2600
+F 0 "C9" V 13048 2600 50  0000 C CNN
+F 1 "100nF" V 13139 2600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 13338 2450 50  0001 C CNN
+F 3 "" H 13300 2600 50  0001 C CNN
+F 4 "105-019" H -5625 -6400 50  0001 C CNN "Devtank"
+	1    13300 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5C694B20
+P 12975 2725
+F 0 "#PWR030" H 12975 2475 50  0001 C CNN
+F 1 "GND" H 12980 2552 50  0000 C CNN
+F 2 "" H 12975 2725 50  0001 C CNN
+F 3 "" H 12975 2725 50  0001 C CNN
+	1    12975 2725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 2600 13600 2600
+Wire Wire Line
+	13150 2600 12975 2600
+Wire Wire Line
+	12975 2600 12975 2725
+$Comp
+L Sensi_Board-rescue:Polyfuse-device F1
+U 1 1 5C6F7F05
+P 13225 1950
+F 0 "F1" V 13000 1950 50  0000 C CNN
+F 1 "Polyfuse" V 13091 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 13275 1750 50  0001 L CNN
+F 3 "" H 13225 1950 50  0001 C CNN
+F 4 "190-003" H -5625 -6400 50  0001 C CNN "Devtank"
+	1    13225 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12775 1500 12775 1550
+Wire Wire Line
+	12775 1950 13075 1950
+Wire Wire Line
+	13375 1950 13600 1950
+Wire Wire Line
+	18350 1225 18200 1225
+Wire Wire Line
+	18200 1225 18200 1525
+$Comp
+L power:GND #PWR012
+U 1 1 5CAE7E7D
+P 18200 4525
+F 0 "#PWR012" H 18200 4275 50  0001 C CNN
+F 1 "GND" H 18205 4352 50  0000 C CNN
+F 2 "" H 18200 4525 50  0001 C CNN
+F 3 "" H 18200 4525 50  0001 C CNN
+	1    18200 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18350 1525 18200 1525
+Connection ~ 18200 1525
+Wire Wire Line
+	18200 1525 18200 1825
+Wire Wire Line
+	18350 1825 18200 1825
+Connection ~ 18200 1825
+Wire Wire Line
+	18200 1825 18200 2125
+Wire Wire Line
+	18350 2125 18200 2125
+Connection ~ 18200 2125
+Wire Wire Line
+	18200 2125 18200 3225
+Wire Wire Line
+	18350 3225 18200 3225
+Connection ~ 18200 3225
+Wire Wire Line
+	18200 3225 18200 4525
+Wire Wire Line
+	18350 1325 17200 1325
+Wire Wire Line
+	18350 1425 17200 1425
+Wire Wire Line
+	18350 1625 17200 1625
+Wire Wire Line
+	18350 2025 17200 2025
+Wire Wire Line
+	18350 3325 17200 3325
+Wire Wire Line
+	18350 3425 17200 3425
+Wire Wire Line
+	18350 3525 17200 3525
+Wire Wire Line
+	18350 3625 17200 3625
+Wire Wire Line
+	18350 3925 17200 3925
+Wire Wire Line
+	18350 4025 17200 4025
+Wire Wire Line
+	18350 4125 17200 4125
+Wire Wire Line
+	18350 4225 17200 4225
+Wire Wire Line
+	18350 4325 17200 4325
+$Comp
+L power:GND #PWR014
+U 1 1 5CF5E660
+P 19850 4525
+F 0 "#PWR014" H 19850 4275 50  0001 C CNN
+F 1 "GND" H 19855 4352 50  0000 C CNN
+F 2 "" H 19850 4525 50  0001 C CNN
+F 3 "" H 19850 4525 50  0001 C CNN
+	1    19850 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20000 1225 19850 1225
+Wire Wire Line
+	19850 1225 19850 1325
+Wire Wire Line
+	20000 1325 19850 1325
+Connection ~ 19850 1325
+Wire Wire Line
+	19850 1325 19850 1425
+Wire Wire Line
+	20000 1425 19850 1425
+Connection ~ 19850 1425
+Wire Wire Line
+	19850 1425 19850 1525
+Wire Wire Line
+	20000 1525 19850 1525
+Connection ~ 19850 1525
+Wire Wire Line
+	19850 1525 19850 1625
+Wire Wire Line
+	20000 1625 19850 1625
+Connection ~ 19850 1625
+Wire Wire Line
+	19850 1625 19850 1725
+Wire Wire Line
+	20000 1725 19850 1725
+Connection ~ 19850 1725
+Wire Wire Line
+	19850 1725 19850 1825
+Wire Wire Line
+	20000 1825 19850 1825
+Connection ~ 19850 1825
+Wire Wire Line
+	19850 1825 19850 2425
+Wire Wire Line
+	20000 2425 19850 2425
+Connection ~ 19850 2425
+Wire Wire Line
+	19850 2425 19850 3425
+Wire Wire Line
+	20000 3425 19850 3425
+Connection ~ 19850 3425
+Wire Wire Line
+	19850 3425 19850 4025
+Wire Wire Line
+	20000 4025 19850 4025
+Connection ~ 19850 4025
+Wire Wire Line
+	19850 4025 19850 4325
+Wire Wire Line
+	20000 4325 19850 4325
+Connection ~ 19850 4325
+Wire Wire Line
+	19850 4325 19850 4525
+$Comp
+L Devtank:+3V3_BP #PWR019
+U 1 1 5D48DCD2
+P 21050 1825
+F 0 "#PWR019" H 21050 1675 50  0001 C CNN
+F 1 "+3V3_BP" V 21065 1953 50  0000 L CNN
+F 2 "" H 21050 1825 50  0000 C CNN
+F 3 "" H 21050 1825 50  0000 C CNN
+	1    21050 1825
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	21050 1225 21150 1225
+Wire Wire Line
+	21350 1225 21675 1225
+Wire Wire Line
+	21675 1325 21350 1325
+Wire Wire Line
+	21350 1325 21350 1225
+Connection ~ 21350 1225
+Wire Wire Line
+	21675 1425 21350 1425
+Wire Wire Line
+	21675 1525 21350 1525
+Wire Wire Line
+	21350 1525 21350 1425
+Connection ~ 21350 1425
+Wire Wire Line
+	21675 1625 21350 1625
+Wire Wire Line
+	21675 1725 21350 1725
+Wire Wire Line
+	21350 1725 21350 1625
+Connection ~ 21350 1625
+Wire Wire Line
+	21350 1625 21150 1625
+Wire Wire Line
+	21050 1425 21150 1425
+Wire Wire Line
+	21675 1825 21350 1825
+Wire Wire Line
+	21675 1925 21350 1925
+Wire Wire Line
+	21350 1925 21350 1825
+Connection ~ 21350 1825
+Wire Wire Line
+	21350 1825 21150 1825
+Wire Wire Line
+	21675 2025 21350 2025
+$Comp
+L Devtank:ADJ_DC #PWR020
+U 1 1 5DA986FE
+P 21050 2025
+F 0 "#PWR020" H 21050 1875 50  0001 C CNN
+F 1 "ADJ_DC" V 21065 2152 50  0000 L CNN
+F 2 "" H 21050 2025 50  0000 C CNN
+F 3 "" H 21050 2025 50  0000 C CNN
+	1    21050 2025
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	21675 2125 21350 2125
+Wire Wire Line
+	21350 2125 21350 2025
+Connection ~ 21350 2025
+Wire Wire Line
+	21350 2025 21150 2025
+$Comp
+L power:GND #PWR022
+U 1 1 5DAE1A4D
+P 21550 4525
+F 0 "#PWR022" H 21550 4275 50  0001 C CNN
+F 1 "GND" H 21555 4352 50  0000 C CNN
+F 2 "" H 21550 4525 50  0001 C CNN
+F 3 "" H 21550 4525 50  0001 C CNN
+	1    21550 4525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21550 4525 21550 3525
+Wire Wire Line
+	21550 2225 21675 2225
+Wire Wire Line
+	21675 2525 21550 2525
+Connection ~ 21550 2525
+Wire Wire Line
+	21550 2525 21550 2225
+Wire Wire Line
+	21675 2825 21550 2825
+Connection ~ 21550 2825
+Wire Wire Line
+	21550 2825 21550 2525
+Wire Wire Line
+	21675 3525 21550 3525
+Connection ~ 21550 3525
+Wire Wire Line
+	21550 3525 21550 2825
+Wire Wire Line
+	21675 2625 20500 2625
+Wire Wire Line
+	21675 2925 20500 2925
+Wire Wire Line
+	21675 3025 20500 3025
+Wire Wire Line
+	21675 3125 20500 3125
+Wire Wire Line
+	21675 3225 20500 3225
+Wire Wire Line
+	21675 3325 20500 3325
+Wire Wire Line
+	21675 3425 20500 3425
+Wire Wire Line
+	21675 3625 20500 3625
+$Comp
+L Devtank:+3V3_BP #PWR029
+U 1 1 5DEB005F
+P 18250 6725
+F 0 "#PWR029" H 18250 6575 50  0001 C CNN
+F 1 "+3V3_BP" H 18265 6898 50  0000 C CNN
+F 2 "" H 18250 6725 50  0000 C CNN
+F 3 "" H 18250 6725 50  0000 C CNN
+	1    18250 6725
+	-1   0    0    1   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Jumper_NC_Dual-device JP1
+U 1 1 5DEB1E14
+P 18250 6375
+F 0 "JP1" V 18204 6476 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 18295 6476 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 18250 6375 50  0001 C CNN
+F 3 "" H 18250 6375 50  0001 C CNN
+F 4 "710-014" H -225 2550 50  0001 C CNN "Devtank"
+	1    18250 6375
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17650 6275 17650 6375
+Wire Wire Line
+	17650 6375 18150 6375
+Wire Wire Line
+	18250 6025 18250 6125
+Wire Wire Line
+	18250 6625 18250 6725
+$Comp
+L Devtank:+3V3_LOC #PWR044
+U 1 1 5E55A876
+P 21650 5900
+F 0 "#PWR044" H 21650 5750 50  0001 C CNN
+F 1 "+3V3_LOC" H 21665 6073 50  0000 C CNN
+F 2 "" H 21650 5900 50  0000 C CNN
+F 3 "" H 21650 5900 50  0000 C CNN
+	1    21650 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR016
+U 1 1 5E638484
+P 21050 1225
+F 0 "#PWR016" H 21050 1075 50  0001 C CNN
+F 1 "+12V" V 21065 1353 50  0000 L CNN
+F 2 "" H 21050 1225 50  0001 C CNN
+F 3 "" H 21050 1225 50  0001 C CNN
+	1    21050 1225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Devtank:-5V #PWR018
+U 1 1 5E638694
+P 21050 1625
+F 0 "#PWR018" H 21050 1475 50  0001 C CNN
+F 1 "-5V" V 21065 1753 50  0000 L CNN
+F 2 "" H 21050 1625 50  0000 C CNN
+F 3 "" H 21050 1625 50  0000 C CNN
+	1    21050 1625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR017
+U 1 1 5E638CC6
+P 21050 1425
+F 0 "#PWR017" H 21050 1275 50  0001 C CNN
+F 1 "+5V" V 21065 1553 50  0000 L CNN
+F 2 "" H 21050 1425 50  0001 C CNN
+F 3 "" H 21050 1425 50  0001 C CNN
+	1    21050 1425
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9900 2525 10900 2525
+Wire Wire Line
+	9900 2675 10900 2675
+Text Label 10900 2525 2    60   ~ 0
+STM_BOOT0_OUT
+Text Label 10900 2675 2    60   ~ 0
+STM_RESET
+$Sheet
+S 7950 1825 1950 1300
+U 5CA829FD
+F0 "USB_Debug" 60
+F1 "USB_Debug.sch" 60
+F2 "RS232_RX" I R 9900 1975 60 
+F3 "RS232_TX" I R 9900 2125 60 
+F4 "USB_P" B L 7950 1975 60 
+F5 "USB_N" B L 7950 2125 60 
+F6 "USB_BUS_PWR" I L 7950 2425 60 
+F7 "USB_~RESET" I L 7950 2800 60 
+F8 "STM_BOOT0" O R 9900 2525 60 
+F9 "STM_RESET" O R 9900 2675 60 
+F10 "STM_RES1" O R 9900 2825 60 
+F11 "STM_RES2" O R 9900 2975 60 
+$EndSheet
+Wire Wire Line
+	9900 2825 10900 2825
+Wire Wire Line
+	9900 2975 10900 2975
+Wire Wire Line
+	9900 2125 10900 2125
+Wire Wire Line
+	9900 1975 10900 1975
+Wire Wire Line
+	7950 1975 7150 1975
+Wire Wire Line
+	7950 2125 7150 2125
+Wire Wire Line
+	7950 2800 7150 2800
+$Comp
+L power:+5V #PWR03
+U 1 1 5CD9567E
+P 7500 2425
+F 0 "#PWR03" H 7500 2275 50  0001 C CNN
+F 1 "+5V" V 7515 2553 50  0000 L CNN
+F 2 "" H 7500 2425 50  0001 C CNN
+F 3 "" H 7500 2425 50  0001 C CNN
+	1    7500 2425
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 2425 7950 2425
+Text Label 17200 1325 0    60   ~ 0
+LVDSCLK+
+Text Label 17200 1425 0    60   ~ 0
+LVDSCLK-
+Text Label 17200 1625 0    60   ~ 0
+LVDS_MOSI+
+Text Label 17200 1725 0    60   ~ 0
+LVDS_MOSI-
+Text Label 17200 1925 0    60   ~ 0
+LVDS_MISO+
+Text Label 17200 2025 0    60   ~ 0
+LVDS_MISO-
+Text Label 17200 2225 0    60   ~ 0
+FPGA_IO1
+Text Label 17200 2325 0    60   ~ 0
+FPGA_IO2
+Text Label 17200 2425 0    60   ~ 0
+FPGA_IO3
+Text Label 17200 2525 0    60   ~ 0
+FPGA_IO4
+Text Label 17200 2625 0    60   ~ 0
+FPGA_IO5
+Text Label 17200 2725 0    60   ~ 0
+FPGA_IO6
+Text Label 17200 2825 0    60   ~ 0
+FPGA_IO7
+Text Label 17200 2925 0    60   ~ 0
+FPGA_IO8
+Text Label 17200 3025 0    60   ~ 0
+FPGA_IO9
+Text Label 17200 3125 0    60   ~ 0
+FPGA_IO10
+Text Label 17200 3325 0    60   ~ 0
+MBRD_IO8
+Text Label 17200 3425 0    60   ~ 0
+MBRD_IO9
+Text Label 17200 3525 0    60   ~ 0
+MBRD_IO10
+Text Label 17200 3625 0    60   ~ 0
+LCOM_1
+Text Label 17200 3725 0    60   ~ 0
+LCOM_2
+Text Label 17200 3825 0    60   ~ 0
+LCOM_3
+Text Label 17200 3925 0    60   ~ 0
+LCOM_4
+Text Label 17200 4025 0    60   ~ 0
+LCOM_5
+Text Label 17200 4125 0    60   ~ 0
+LCOM_6
+Text Label 17200 4225 0    60   ~ 0
+LCOM_7
+Text Label 17200 4325 0    60   ~ 0
+LCOM_8
+Wire Wire Line
+	17200 1725 18350 1725
+Wire Wire Line
+	17200 1925 18350 1925
+Wire Wire Line
+	17200 2225 18350 2225
+Wire Wire Line
+	17200 2325 18350 2325
+Wire Wire Line
+	17200 2425 18350 2425
+Wire Wire Line
+	17200 2525 18350 2525
+Wire Wire Line
+	17200 2625 18350 2625
+Wire Wire Line
+	17200 2725 18350 2725
+Wire Wire Line
+	17200 2825 18350 2825
+Wire Wire Line
+	17200 2925 18350 2925
+Wire Wire Line
+	17200 3025 18350 3025
+Wire Wire Line
+	17200 3125 18350 3125
+Wire Wire Line
+	17200 3725 18350 3725
+Wire Wire Line
+	17200 3825 18350 3825
+Text Label 18900 1925 0    60   ~ 0
+SPI0_MOSI
+Text Label 18900 2025 0    60   ~ 0
+SPI0_MISO
+Text Label 18900 2125 0    60   ~ 0
+SPI0_CLK
+Text Label 18900 2325 0    60   ~ 0
+SPI0_CS1
+Text Label 18900 2225 0    60   ~ 0
+SPI0_CS0
+Wire Wire Line
+	18900 1925 20000 1925
+Wire Wire Line
+	18900 2025 20000 2025
+Wire Wire Line
+	18900 2125 20000 2125
+Wire Wire Line
+	18900 2225 20000 2225
+Wire Wire Line
+	18900 2325 20000 2325
+Wire Wire Line
+	18900 2525 20000 2525
+Wire Wire Line
+	18900 2625 20000 2625
+Wire Wire Line
+	18900 2725 20000 2725
+Wire Wire Line
+	18900 2825 20000 2825
+Wire Wire Line
+	18900 2925 20000 2925
+Text Label 18900 2525 0    60   ~ 0
+SPI1_MOSI
+Text Label 18900 2625 0    60   ~ 0
+SPI1_MISO
+Text Label 18900 2725 0    60   ~ 0
+SPI1_CLK
+Text Label 18900 2825 0    60   ~ 0
+SPI1_CS0
+Text Label 18900 2925 0    60   ~ 0
+SPI1_CS1
+Wire Wire Line
+	18900 3025 20000 3025
+Wire Wire Line
+	18900 3125 20000 3125
+Wire Wire Line
+	18900 3225 20000 3225
+Wire Wire Line
+	18900 3325 20000 3325
+Text Label 18900 3025 0    60   ~ 0
+SPI1_CS2
+Text Label 18900 3125 0    60   ~ 0
+GPIO1_MBRD
+Text Label 18900 3225 0    60   ~ 0
+GPIO2_MBRD
+Text Label 18900 3325 0    60   ~ 0
+GPIO3_MBRD
+Wire Wire Line
+	18900 3525 20000 3525
+Wire Wire Line
+	18900 3625 20000 3625
+Wire Wire Line
+	18900 3725 20000 3725
+Wire Wire Line
+	18900 3825 20000 3825
+Wire Wire Line
+	18900 3925 20000 3925
+Wire Wire Line
+	18900 4125 20000 4125
+Wire Wire Line
+	18900 4225 20000 4225
+Text Label 18900 3525 0    60   ~ 0
+SYS_CLK
+Text Label 18900 3625 0    60   ~ 0
+SYS_TRIG
+Text Label 18900 3725 0    60   ~ 0
+PORT_SEL
+Text Label 18900 3825 0    60   ~ 0
+SHUTDOWN
+Text Label 18900 3925 0    60   ~ 0
+RESET
+Wire Wire Line
+	20500 2325 21675 2325
+Wire Wire Line
+	20500 2425 21675 2425
+Wire Wire Line
+	20500 2725 21675 2725
+Wire Wire Line
+	20500 3725 21675 3725
+Wire Wire Line
+	20500 3825 21675 3825
+Wire Wire Line
+	20500 3925 21675 3925
+Wire Wire Line
+	20500 4025 21675 4025
+Wire Wire Line
+	20500 4125 21675 4125
+Wire Wire Line
+	20500 4225 21675 4225
+Wire Wire Line
+	20500 4325 21675 4325
+Text Label 20500 2325 0    60   ~ 0
+I2C0_SDA
+Text Label 20500 2425 0    60   ~ 0
+I2C0_SCL
+Text Label 20500 2625 0    60   ~ 0
+I2C1_SDA
+Text Label 20500 2725 0    60   ~ 0
+I2C1_SCL
+Text Label 20500 2925 0    60   ~ 0
+MBRD_IO4
+Text Label 20500 3025 0    60   ~ 0
+MBRD_IO5
+Text Label 20500 3125 0    60   ~ 0
+MBRD_IO6
+Text Label 20500 3225 0    60   ~ 0
+MBRD_IO7
+Text Label 20500 3325 0    60   ~ 0
+PWM0
+Text Label 20500 3425 0    60   ~ 0
+PWM1
+Text Label 20500 3625 0    60   ~ 0
+RCOM_1
+Text Label 20500 3725 0    60   ~ 0
+RCOM_2
+Text Label 20500 3825 0    60   ~ 0
+RCOM_3
+Text Label 20500 3925 0    60   ~ 0
+RCOM_4
+Text Label 20500 4025 0    60   ~ 0
+RCOM_5
+Text Label 20500 4125 0    60   ~ 0
+RCOM_6
+Text Label 20500 4225 0    60   ~ 0
+RCOM_7
+Text Label 20500 4325 0    60   ~ 0
+RCOM_8
+Text Label 7150 1975 0    60   ~ 0
+USB_DEBUG_P
+Text Label 7150 2125 0    60   ~ 0
+USB_DEBUG_N
+Text Label 7150 2800 0    60   ~ 0
+RESET
+Text Label 10900 1975 2    60   ~ 0
+STM_DEBUG_RX
+Text Label 10900 2125 2    60   ~ 0
+STM_DEBUG_TX
+Text Label 10900 2825 2    60   ~ 0
+STM_RES1
+Text Label 10900 2975 2    60   ~ 0
+STM_RES2
+$Comp
+L Sensi_Board-rescue:AT25_EEPROM-memory U3
+U 1 1 5EDBA612
+P 14300 6425
+F 0 "U3" H 14025 6700 50  0000 C CNN
+F 1 "AT25DN512CSSHF-B" H 14775 6700 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 13950 6375 50  0001 C CNN
+F 3 "http://www.atmel.com/products/Memories/serial/spi.aspx" H 13950 6375 50  0001 C CNN
+F 4 "129-002" H -7225 2650 50  0001 C CNN "Devtank"
+	1    14300 6425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensi_Board-rescue:R-device R16
+U 1 1 5EDBA935
+P 13575 6100
+F 0 "R16" H 13450 6050 50  0000 C CNN
+F 1 "4K7" H 13450 6150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13505 6100 50  0001 C CNN
+F 3 "" H 13575 6100 50  0001 C CNN
+F 4 "101-009" H -7225 2650 50  0001 C CNN "Devtank"
+	1    13575 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Sensi_Board-rescue:R-device R15
+U 1 1 5EDBAD27
+P 13300 6100
+F 0 "R15" H 13175 6050 50  0000 C CNN
+F 1 "4K7" H 13175 6150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13230 6100 50  0001 C CNN
+F 3 "" H 13300 6100 50  0001 C CNN
+F 4 "101-009" H -7225 2650 50  0001 C CNN "Devtank"
+	1    13300 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Sensi_Board-rescue:R-device R17
+U 1 1 5EDBADBB
+P 13575 6800
+F 0 "R17" H 13450 6750 50  0000 C CNN
+F 1 "DNF" H 13450 6850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13505 6800 50  0001 C CNN
+F 3 "" H 13575 6800 50  0001 C CNN
+	1    13575 6800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13900 6325 13575 6325
+Wire Wire Line
+	13575 6325 13575 6250
+Wire Wire Line
+	13300 6250 13300 6425
+Wire Wire Line
+	13300 6425 13900 6425
+Wire Wire Line
+	13575 6650 13575 6325
+Connection ~ 13575 6325
+$Comp
+L power:+3V3 #PWR036
+U 1 1 5EF03E3A
+P 13300 5775
+F 0 "#PWR036" H 13300 5625 50  0001 C CNN
+F 1 "+3V3" H 13315 5948 50  0000 C CNN
+F 2 "" H 13300 5775 50  0001 C CNN
+F 3 "" H 13300 5775 50  0001 C CNN
+	1    13300 5775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13300 5775 13300 5850
+Wire Wire Line
+	13575 5950 13575 5850
+Wire Wire Line
+	13575 5850 13300 5850
+Connection ~ 13300 5850
+Wire Wire Line
+	13300 5850 13300 5950
+$Comp
+L power:GND #PWR038
+U 1 1 5EFA9CAB
+P 13575 7050
+F 0 "#PWR038" H 13575 6800 50  0001 C CNN
+F 1 "GND" H 13580 6877 50  0000 C CNN
+F 2 "" H 13575 7050 50  0001 C CNN
+F 3 "" H 13575 7050 50  0001 C CNN
+	1    13575 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13575 7050 13575 6950
+$Comp
+L Sensi_Board-rescue:R-device R14
+U 1 1 5EFFD223
+P 12925 6100
+F 0 "R14" H 12800 6050 50  0000 C CNN
+F 1 "10K" H 12800 6150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 12855 6100 50  0001 C CNN
+F 3 "" H 12925 6100 50  0001 C CNN
+F 4 "101-010" H -7225 2625 50  0001 C CNN "Devtank"
+	1    12925 6100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12925 5950 12925 5850
+Wire Wire Line
+	12925 5850 13300 5850
+Wire Wire Line
+	12925 6250 12925 6525
+Connection ~ 12925 6525
+Wire Wire Line
+	12925 6525 13900 6525
+Wire Wire Line
+	12350 6525 12925 6525
+Text Label 12350 6525 0    60   ~ 0
+PORT_SEL
+Wire Wire Line
+	14700 6325 15475 6325
+Wire Wire Line
+	14700 6425 15475 6425
+Wire Wire Line
+	14700 6525 15475 6525
+$Comp
+L power:GND #PWR043
+U 1 1 5F347969
+P 14300 6875
+F 0 "#PWR043" H 14300 6625 50  0001 C CNN
+F 1 "GND" H 14305 6702 50  0000 C CNN
+F 2 "" H 14300 6875 50  0001 C CNN
+F 3 "" H 14300 6875 50  0001 C CNN
+	1    14300 6875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14300 6875 14300 6725
+$Comp
+L power:+3V3 #PWR042
+U 1 1 5F39CE3C
+P 14300 5600
+F 0 "#PWR042" H 14300 5450 50  0001 C CNN
+F 1 "+3V3" H 14315 5773 50  0000 C CNN
+F 2 "" H 14300 5600 50  0001 C CNN
+F 3 "" H 14300 5600 50  0001 C CNN
+	1    14300 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14300 5600 14300 5775
+$Comp
+L Sensi_Board-rescue:C-device C12
+U 1 1 5F448100
+P 14650 5775
+F 0 "C12" V 14398 5775 50  0000 C CNN
+F 1 "100nF" V 14489 5775 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 14688 5625 50  0001 C CNN
+F 3 "" H 14650 5775 50  0001 C CNN
+F 4 "105-019" H -7225 2650 50  0001 C CNN "Devtank"
+	1    14650 5775
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR047
+U 1 1 5F448107
+P 14950 5850
+F 0 "#PWR047" H 14950 5600 50  0001 C CNN
+F 1 "GND" H 14955 5677 50  0000 C CNN
+F 2 "" H 14950 5850 50  0001 C CNN
+F 3 "" H 14950 5850 50  0001 C CNN
+	1    14950 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14500 5775 14300 5775
+Connection ~ 14300 5775
+Wire Wire Line
+	14300 5775 14300 6125
+Wire Wire Line
+	14950 5850 14950 5775
+Wire Wire Line
+	14800 5775 14950 5775
+Text Label 15475 6325 2    60   ~ 0
+SPI0_CLK
+Text Label 15475 6525 2    60   ~ 0
+SPI0_MISO
+Text Label 15475 6425 2    60   ~ 0
+SPI0_MOSI
+$Comp
+L Devtank:ADJ_DC #PWR026
+U 1 1 5FAC7737
+P 12550 1325
+F 0 "#PWR026" H 12550 1175 50  0001 C CNN
+F 1 "ADJ_DC" H 12425 1475 50  0000 L CNN
+F 2 "" H 12550 1325 50  0000 C CNN
+F 3 "" H 12550 1325 50  0000 C CNN
+	1    12550 1325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR025
+U 1 1 5FB1DE03
+P 12300 1500
+F 0 "#PWR025" H 12300 1350 50  0001 C CNN
+F 1 "+3V3" H 12275 1675 50  0000 C CNN
+F 2 "" H 12300 1500 50  0001 C CNN
+F 3 "" H 12300 1500 50  0001 C CNN
+	1    12300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensi_Board-rescue:R-device R9
+U 1 1 5FB74C13
+P 12550 1700
+F 0 "R9" H 12450 1625 50  0000 C CNN
+F 1 "DNF" H 12440 1730 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 12480 1700 50  0001 C CNN
+F 3 "" H 12550 1700 50  0001 C CNN
+F 4 "" H -5625 -6400 50  0001 C CNN "Devtank"
+	1    12550 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Sensi_Board-rescue:R-device R8
+U 1 1 5FB75732
+P 12300 1700
+F 0 "R8" H 12200 1625 50  0000 C CNN
+F 1 "DNF" H 12175 1725 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 12230 1700 50  0001 C CNN
+F 3 "" H 12300 1700 50  0001 C CNN
+F 4 "" H -5625 -6400 50  0001 C CNN "Devtank"
+	1    12300 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Sensi_Board-rescue:R-device R10
+U 1 1 5FB759A2
+P 12775 1700
+F 0 "R10" H 12650 1625 50  0000 C CNN
+F 1 "0R" H 12675 1725 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 12705 1700 50  0001 C CNN
+F 3 "" H 12775 1700 50  0001 C CNN
+F 4 "101-007" H -5625 -6400 50  0001 C CNN "Devtank"
+	1    12775 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12775 1850 12775 1950
+Wire Wire Line
+	12550 1325 12550 1550
+Wire Wire Line
+	12300 1500 12300 1550
+Wire Wire Line
+	12300 1850 12300 1950
+Wire Wire Line
+	12300 1950 12550 1950
+Connection ~ 12775 1950
+Wire Wire Line
+	12550 1850 12550 1950
+Connection ~ 12550 1950
+Wire Wire Line
+	12550 1950 12775 1950
+Text Label 1675 1525 0    60   ~ 0
+STM_RESET
+Text Label 1675 6735 0    60   ~ 0
+STM_RES1
+Text Label 1675 6845 0    60   ~ 0
+STM_RES2
+Text Label 1675 1950 0    60   ~ 0
+STM_DEBUG_RX
+Text Label 1675 2100 0    60   ~ 0
+STM_DEBUG_TX
+Wire Wire Line
+	2725 1950 1675 1950
+Wire Wire Line
+	2725 2100 1675 2100
+Wire Wire Line
+	2725 1675 1675 1675
+Wire Wire Line
+	2725 1525 1675 1525
+Wire Wire Line
+	2725 4775 1675 4775
+Wire Wire Line
+	2725 4900 1675 4900
+Text Label 1675 2575 0    60   ~ 0
+STM_USB_DATA_P
+Text Label 1675 2425 0    60   ~ 0
+STM_USB_DATA_N
+Wire Wire Line
+	1675 2425 2725 2425
+Wire Wire Line
+	4625 1650 5925 1650
+Wire Wire Line
+	4625 1775 5925 1775
+Wire Wire Line
+	4625 1900 5925 1900
+Wire Wire Line
+	4625 2025 5925 2025
+Text Label 5550 3175 2    60   ~ 0
+RL1_OUT
+Text Label 12475 3600 0    60   ~ 0
+RL1_OUT
+$Comp
+L power:+12V #PWR027
+U 1 1 5E61128A
+P 12775 1500
+F 0 "#PWR027" H 12775 1350 50  0001 C CNN
+F 1 "+12V" H 12700 1675 50  0000 L CNN
+F 2 "" H 12775 1500 50  0001 C CNN
+F 3 "" H 12775 1500 50  0001 C CNN
+	1    12775 1500
+	1    0    0    -1  
+$EndComp
+Text Label 5925 1650 2    60   ~ 0
+HS_CTRL_SW1
+Text Label 5925 1775 2    60   ~ 0
+HS_CTRL_SW2
+Text Label 5925 1900 2    60   ~ 0
+HS_CTRL_SW3
+Text Label 5925 2025 2    60   ~ 0
+HS_CTRL_SW4
+Text Label 15725 3750 2    60   ~ 0
+OUT1_NO
+Wire Wire Line
+	15025 3900 15725 3900
+Text Label 15725 3900 2    60   ~ 0
+OUT1_NC
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP5
+U 1 1 5F7FAFC8
+P 14125 12400
+F 0 "TP5" V 14125 12575 50  0000 L CNN
+F 1 "Test_Point" H 14183 12429 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 14325 12400 50  0001 C CNN
+F 3 "~" H 14325 12400 50  0001 C CNN
+	1    14125 12400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP4
+U 1 1 5F7FB074
+P 14125 12250
+F 0 "TP4" V 14125 12425 50  0000 L CNN
+F 1 "Test_Point" H 14183 12279 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 14325 12250 50  0001 C CNN
+F 3 "~" H 14325 12250 50  0001 C CNN
+	1    14125 12250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP3
+U 1 1 5F7FB11E
+P 14125 12100
+F 0 "TP3" V 14125 12275 50  0000 L CNN
+F 1 "Test_Point" H 14183 12129 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 14325 12100 50  0001 C CNN
+F 3 "~" H 14325 12100 50  0001 C CNN
+	1    14125 12100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP55
+U 1 1 5F7FBA6B
+P 16765 12100
+F 0 "TP55" V 16765 12275 50  0000 L CNN
+F 1 "Test_Point" H 16823 12129 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 16965 12100 50  0001 C CNN
+F 3 "~" H 16965 12100 50  0001 C CNN
+	1    16765 12100
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP56
+U 1 1 5F7FC1AB
+P 16765 12250
+F 0 "TP56" V 16765 12425 50  0000 L CNN
+F 1 "Test_Point" H 16823 12279 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 16965 12250 50  0001 C CNN
+F 3 "~" H 16965 12250 50  0001 C CNN
+	1    16765 12250
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP57
+U 1 1 5F7FC265
+P 16765 12400
+F 0 "TP57" V 16765 12575 50  0000 L CNN
+F 1 "Test_Point" H 16823 12429 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 16965 12400 50  0001 C CNN
+F 3 "~" H 16965 12400 50  0001 C CNN
+	1    16765 12400
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP58
+U 1 1 5F7FC31F
+P 16760 12550
+F 0 "TP58" V 16760 12725 50  0000 L CNN
+F 1 "Test_Point" H 16818 12579 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 16960 12550 50  0001 C CNN
+F 3 "~" H 16960 12550 50  0001 C CNN
+	1    16760 12550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2725 3000 1675 3000
+Wire Wire Line
+	2725 3125 1675 3125
+Wire Wire Line
+	2725 3250 1675 3250
+Wire Wire Line
+	2725 3375 1675 3375
+Wire Wire Line
+	2725 3625 1675 3625
+Wire Wire Line
+	2725 3750 1675 3750
+Text Label 1675 4125 0    60   ~ 0
+TH3_OUT
+Wire Wire Line
+	2725 4000 1675 4000
+Wire Wire Line
+	4625 3175 5550 3175
+Wire Wire Line
+	2725 5025 1675 5025
+Wire Wire Line
+	2725 5150 1675 5150
+Wire Wire Line
+	2725 5275 1675 5275
+Wire Wire Line
+	2725 5400 1675 5400
+Wire Wire Line
+	2725 5525 1675 5525
+Wire Wire Line
+	2725 5650 1675 5650
+Wire Wire Line
+	2725 5775 1675 5775
+Wire Wire Line
+	2725 6025 1675 6025
+Wire Wire Line
+	2725 5900 1675 5900
+Text Label 1675 6025 0    60   ~ 0
+GPIO1
+Wire Wire Line
+	2300 14725 1125 14725
+Wire Wire Line
+	2300 14875 1125 14875
+Wire Wire Line
+	2300 15025 1125 15025
+Wire Wire Line
+	2300 15175 1125 15175
+Wire Wire Line
+	2300 15325 1125 15325
+Wire Wire Line
+	2300 15475 1125 15475
+Wire Wire Line
+	4100 15475 5225 15475
+Text Label 1125 14725 0    60   ~ 0
+GPIO1_EXT
+Text Label 1125 14875 0    60   ~ 0
+GPIO2_EXT
+Text Label 1125 15025 0    60   ~ 0
+GPIO3_EXT
+Text Label 1125 15175 0    60   ~ 0
+GPIO4_EXT
+Text Label 1125 15325 0    60   ~ 0
+GPIO5_EXT
+Text Label 1125 15475 0    60   ~ 0
+GPIO6_EXT
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP13
+U 1 1 60F6BD0B
+P 1125 14725
+F 0 "TP13" V 1125 14900 50  0000 L CNN
+F 1 "Test_Point" H 1183 14754 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1325 14725 50  0001 C CNN
+F 3 "~" H 1325 14725 50  0001 C CNN
+	1    1125 14725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP14
+U 1 1 60F6C341
+P 1125 14875
+F 0 "TP14" V 1125 15050 50  0000 L CNN
+F 1 "Test_Point" H 1183 14904 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1325 14875 50  0001 C CNN
+F 3 "~" H 1325 14875 50  0001 C CNN
+	1    1125 14875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP15
+U 1 1 60F6C413
+P 1125 15025
+F 0 "TP15" V 1125 15200 50  0000 L CNN
+F 1 "Test_Point" H 1183 15054 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1325 15025 50  0001 C CNN
+F 3 "~" H 1325 15025 50  0001 C CNN
+	1    1125 15025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP16
+U 1 1 60F6C839
+P 1125 15175
+F 0 "TP16" V 1125 15350 50  0000 L CNN
+F 1 "Test_Point" H 1183 15204 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1325 15175 50  0001 C CNN
+F 3 "~" H 1325 15175 50  0001 C CNN
+	1    1125 15175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP17
+U 1 1 60F6CC6E
+P 1125 15325
+F 0 "TP17" V 1125 15500 50  0000 L CNN
+F 1 "Test_Point" H 1183 15354 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1325 15325 50  0001 C CNN
+F 3 "~" H 1325 15325 50  0001 C CNN
+	1    1125 15325
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP18
+U 1 1 60F6CD46
+P 1125 15475
+F 0 "TP18" V 1125 15650 50  0000 L CNN
+F 1 "Test_Point" H 1183 15504 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1325 15475 50  0001 C CNN
+F 3 "~" H 1325 15475 50  0001 C CNN
+	1    1125 15475
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP37
+U 1 1 60F6E72C
+P 5225 14725
+F 0 "TP37" V 5225 14900 50  0000 L CNN
+F 1 "Test_Point" H 5283 14754 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5425 14725 50  0001 C CNN
+F 3 "~" H 5425 14725 50  0001 C CNN
+	1    5225 14725
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP38
+U 1 1 60F6EE46
+P 5225 14875
+F 0 "TP38" V 5225 15050 50  0000 L CNN
+F 1 "Test_Point" H 5283 14904 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5425 14875 50  0001 C CNN
+F 3 "~" H 5425 14875 50  0001 C CNN
+	1    5225 14875
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP39
+U 1 1 60F6EF54
+P 5225 15025
+F 0 "TP39" V 5225 15200 50  0000 L CNN
+F 1 "Test_Point" H 5283 15054 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5425 15025 50  0001 C CNN
+F 3 "~" H 5425 15025 50  0001 C CNN
+	1    5225 15025
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP40
+U 1 1 60F6F05C
+P 5225 15175
+F 0 "TP40" V 5225 15350 50  0000 L CNN
+F 1 "Test_Point" H 5283 15204 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5425 15175 50  0001 C CNN
+F 3 "~" H 5425 15175 50  0001 C CNN
+	1    5225 15175
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP45
+U 1 1 60F6FDC6
+P 5225 15325
+F 0 "TP45" V 5225 15500 50  0000 L CNN
+F 1 "Test_Point" H 5283 15354 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5425 15325 50  0001 C CNN
+F 3 "~" H 5425 15325 50  0001 C CNN
+	1    5225 15325
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP46
+U 1 1 60F6FECE
+P 5225 15475
+F 0 "TP46" V 5225 15650 50  0000 L CNN
+F 1 "Test_Point" H 5283 15504 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5425 15475 50  0001 C CNN
+F 3 "~" H 5425 15475 50  0001 C CNN
+	1    5225 15475
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP100
+U 1 1 610380C9
+P 15850 3750
+F 0 "TP100" V 15850 3925 50  0000 L CNN
+F 1 "Test_Point" H 15908 3779 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 16050 3750 50  0001 C CNN
+F 3 "~" H 16050 3750 50  0001 C CNN
+	1    15850 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP87
+U 1 1 61038A45
+P 15725 3900
+F 0 "TP87" V 15725 4075 50  0000 L CNN
+F 1 "Test_Point" H 15783 3929 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 15925 3900 50  0001 C CNN
+F 3 "~" H 15925 3900 50  0001 C CNN
+	1    15725 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP81
+U 1 1 6103B0B8
+P 12475 3600
+F 0 "TP81" V 12475 3775 50  0000 L CNN
+F 1 "Test_Point" H 12533 3629 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 12675 3600 50  0001 C CNN
+F 3 "~" H 12675 3600 50  0001 C CNN
+	1    12475 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP31
+U 1 1 6103CABC
+P 10900 1975
+F 0 "TP31" V 10900 2150 50  0000 L CNN
+F 1 "Test_Point" H 10958 2004 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 11100 1975 50  0001 C CNN
+F 3 "~" H 11100 1975 50  0001 C CNN
+	1    10900 1975
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP32
+U 1 1 6103D35F
+P 10900 2125
+F 0 "TP32" V 10900 2300 50  0000 L CNN
+F 1 "Test_Point" H 10958 2154 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 11100 2125 50  0001 C CNN
+F 3 "~" H 11100 2125 50  0001 C CNN
+	1    10900 2125
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP33
+U 1 1 6103D4C1
+P 10900 2525
+F 0 "TP33" V 10900 2700 50  0000 L CNN
+F 1 "Test_Point" H 10958 2554 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 11100 2525 50  0001 C CNN
+F 3 "~" H 11100 2525 50  0001 C CNN
+	1    10900 2525
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP34
+U 1 1 6103D63D
+P 10900 2675
+F 0 "TP34" V 10900 2850 50  0000 L CNN
+F 1 "Test_Point" H 10958 2704 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 11100 2675 50  0001 C CNN
+F 3 "~" H 11100 2675 50  0001 C CNN
+	1    10900 2675
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP35
+U 1 1 6103D7A1
+P 10900 2825
+F 0 "TP35" V 10900 3000 50  0000 L CNN
+F 1 "Test_Point" H 10958 2854 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 11100 2825 50  0001 C CNN
+F 3 "~" H 11100 2825 50  0001 C CNN
+	1    10900 2825
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP36
+U 1 1 6103D90F
+P 10900 2975
+F 0 "TP36" V 10900 3150 50  0000 L CNN
+F 1 "Test_Point" H 10958 3004 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 11100 2975 50  0001 C CNN
+F 3 "~" H 11100 2975 50  0001 C CNN
+	1    10900 2975
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP2
+U 1 1 6103DE85
+P 7150 2800
+F 0 "TP2" V 7150 2975 50  0000 L CNN
+F 1 "Test_Point" H 7208 2829 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7350 2800 50  0001 C CNN
+F 3 "~" H 7350 2800 50  0001 C CNN
+	1    7150 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP86
+U 1 1 6103ED04
+P 13600 2000
+F 0 "TP86" V 13600 2175 50  0000 L CNN
+F 1 "Test_Point" H 13658 2029 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 13800 2000 50  0001 C CNN
+F 3 "~" H 13800 2000 50  0001 C CNN
+	1    13600 2000
+	0    1    1    0   
+$EndComp
+Connection ~ 13600 2000
+Wire Wire Line
+	13600 2000 13600 2200
+$Comp
+L Sensi_Board-rescue:LD1117S33TR_SOT223-regul U2
+U 1 1 626E7F61
+P 21050 6325
+F 0 "U2" H 21050 6567 50  0000 C CNN
+F 1 "LD1117S33TR_SOT223" H 21050 6476 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 21050 6525 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 21150 6075 50  0001 C CNN
+F 4 "150-004" H 21050 6325 50  0001 C CNN "Devtank"
+	1    21050 6325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Devtank:+3V3_LOC #PWR028
+U 1 1 62742FED
+P 18250 6025
+F 0 "#PWR028" H 18250 5875 50  0001 C CNN
+F 1 "+3V3_LOC" H 18265 6198 50  0000 C CNN
+F 2 "" H 18250 6025 50  0000 C CNN
+F 3 "" H 18250 6025 50  0000 C CNN
+	1    18250 6025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR034
+U 1 1 6274322C
+P 20400 5875
+F 0 "#PWR034" H 20400 5725 50  0001 C CNN
+F 1 "+5V" H 20325 6025 50  0000 L CNN
+F 2 "" H 20400 5875 50  0001 C CNN
+F 3 "" H 20400 5875 50  0001 C CNN
+	1    20400 5875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20400 6325 20750 6325
+Wire Wire Line
+	21350 6325 21650 6325
+Wire Wire Line
+	21650 6325 21650 5975
+$Comp
+L power:GND #PWR040
+U 1 1 627F4882
+P 21050 6825
+F 0 "#PWR040" H 21050 6575 50  0001 C CNN
+F 1 "GND" H 21055 6652 50  0000 C CNN
+F 2 "" H 21050 6825 50  0001 C CNN
+F 3 "" H 21050 6825 50  0001 C CNN
+	1    21050 6825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21050 6825 21050 6625
+$Comp
+L Sensi_Board-rescue:C-device C10
+U 1 1 6284DC97
+P 20400 6600
+F 0 "C10" H 20225 6550 50  0000 C CNN
+F 1 "10uF" H 20200 6650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 20438 6450 50  0001 C CNN
+F 3 "" H 20400 6600 50  0001 C CNN
+F 4 "105-001" H -25 725 50  0001 C CNN "Devtank"
+	1    20400 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Sensi_Board-rescue:C-device C11
+U 1 1 6284E823
+P 21650 6600
+F 0 "C11" H 21475 6550 50  0000 C CNN
+F 1 "10uF" H 21450 6650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 21688 6450 50  0001 C CNN
+F 3 "" H 21650 6600 50  0001 C CNN
+F 4 "105-001" H -25 725 50  0001 C CNN "Devtank"
+	1    21650 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR035
+U 1 1 6284E9B1
+P 20400 6825
+F 0 "#PWR035" H 20400 6575 50  0001 C CNN
+F 1 "GND" H 20405 6652 50  0000 C CNN
+F 2 "" H 20400 6825 50  0001 C CNN
+F 3 "" H 20400 6825 50  0001 C CNN
+	1    20400 6825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR045
+U 1 1 628A7472
+P 21650 6825
+F 0 "#PWR045" H 21650 6575 50  0001 C CNN
+F 1 "GND" H 21655 6652 50  0000 C CNN
+F 2 "" H 21650 6825 50  0001 C CNN
+F 3 "" H 21650 6825 50  0001 C CNN
+	1    21650 6825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21650 6750 21650 6825
+Wire Wire Line
+	21650 6450 21650 6325
+Connection ~ 21650 6325
+Wire Wire Line
+	20400 6450 20400 6325
+Connection ~ 20400 6325
+$Comp
+L Sensi_Board-rescue:CP-device C13
+U 1 1 62A0ADAE
+P 22075 6600
+F 0 "C13" H 22193 6646 50  0000 L CNN
+F 1 "100uF" H 22193 6555 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 22113 6450 50  0001 C CNN
+F 3 "" H 22075 6600 50  0001 C CNN
+F 4 "108-003" H 22075 6600 50  0001 C CNN "Devtank"
+	1    22075 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22075 6450 22075 6325
+Wire Wire Line
+	22075 6325 21650 6325
+$Comp
+L power:GND #PWR046
+U 1 1 62A64926
+P 22075 6825
+F 0 "#PWR046" H 22075 6575 50  0001 C CNN
+F 1 "GND" H 22080 6652 50  0000 C CNN
+F 2 "" H 22075 6825 50  0001 C CNN
+F 3 "" H 22075 6825 50  0001 C CNN
+	1    22075 6825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22075 6825 22075 6750
+Wire Notes Line
+	19925 5650 22475 5650
+Wire Notes Line
+	22500 5675 22500 7150
+Wire Notes Line
+	22500 7200 19925 7200
+Wire Notes Line
+	19925 7175 19925 5700
+Text Notes 20075 7325 0    60   ~ 0
+Optional on-bord PSU for standalone applications
+$Comp
+L Sensi_Board-rescue:D-device D32
+U 1 1 62B97E68
+P 21025 5975
+F 0 "D32" H 21025 6191 50  0000 C CNN
+F 1 "MBR230LSFT1G" H 21025 6100 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 21025 5975 50  0001 C CNN
+F 3 "" H 21025 5975 50  0001 C CNN
+F 4 "133-006" H -25 725 50  0001 C CNN "Devtank"
+	1    21025 5975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21175 5975 21650 5975
+Connection ~ 21650 5975
+Wire Wire Line
+	21650 5975 21650 5900
+Text Label 650  3875 0    60   ~ 0
+I_MON
+Text Label 15525 3600 2    60   ~ 0
+OUT1_COM
+$Comp
+L Sensi_Board-rescue:R-device R11
+U 1 1 5D759453
+P 15625 2775
+F 0 "R11" H 15500 2700 50  0000 C CNN
+F 1 "0R" H 15525 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 15555 2775 50  0001 C CNN
+F 3 "" H 15625 2775 50  0001 C CNN
+F 4 "101-007" H -5625 -6400 50  0001 C CNN "Devtank"
+	1    15625 2775
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	15625 2925 15625 3600
+$Comp
+L power:+3V3 #PWR0207
+U 1 1 5CC11940
+P 13600 2525
+F 0 "#PWR0207" H 13600 2375 50  0001 C CNN
+F 1 "+3V3" H 13615 2698 50  0000 C CNN
+F 2 "" H 13600 2525 50  0001 C CNN
+F 3 "" H 13600 2525 50  0001 C CNN
+	1    13600 2525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13600 2525 13600 2600
+Connection ~ 13600 2600
+$Comp
+L Sensi_Board-rescue:R-device R149
+U 1 1 5CC4B709
+P 1375 3875
+F 0 "R149" V 1325 3625 50  0000 C CNN
+F 1 "0R" V 1325 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1305 3875 50  0001 C CNN
+F 3 "" H 1375 3875 50  0001 C CNN
+F 4 "101-005" H -350 550 50  0001 C CNN "Devtank"
+	1    1375 3875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	650  3875 1225 3875
+Wire Wire Line
+	1675 3500 2725 3500
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP101
+U 1 1 5D0F8C0F
+P 21150 1225
+F 0 "TP101" H 21225 1350 50  0000 L CNN
+F 1 "Test_Point" H 21208 1254 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 21350 1225 50  0001 C CNN
+F 3 "~" H 21350 1225 50  0001 C CNN
+	1    21150 1225
+	1    0    0    -1  
+$EndComp
+Connection ~ 21150 1225
+Wire Wire Line
+	21150 1225 21350 1225
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP102
+U 1 1 5D0FA000
+P 21150 1425
+F 0 "TP102" H 21225 1550 50  0000 L CNN
+F 1 "Test_Point" H 21208 1454 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 21350 1425 50  0001 C CNN
+F 3 "~" H 21350 1425 50  0001 C CNN
+	1    21150 1425
+	1    0    0    -1  
+$EndComp
+Connection ~ 21150 1425
+Wire Wire Line
+	21150 1425 21350 1425
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP103
+U 1 1 5D0FA7DA
+P 21150 1625
+F 0 "TP103" H 21225 1750 50  0000 L CNN
+F 1 "Test_Point" H 21208 1654 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 21350 1625 50  0001 C CNN
+F 3 "~" H 21350 1625 50  0001 C CNN
+	1    21150 1625
+	1    0    0    -1  
+$EndComp
+Connection ~ 21150 1625
+Wire Wire Line
+	21150 1625 21050 1625
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP104
+U 1 1 5D0FAC40
+P 21150 1825
+F 0 "TP104" H 21225 1950 50  0000 L CNN
+F 1 "Test_Point" H 21208 1854 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 21350 1825 50  0001 C CNN
+F 3 "~" H 21350 1825 50  0001 C CNN
+	1    21150 1825
+	1    0    0    -1  
+$EndComp
+Connection ~ 21150 1825
+Wire Wire Line
+	21150 1825 21050 1825
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP105
+U 1 1 5D0FAD9C
+P 21150 2025
+F 0 "TP105" H 21225 2150 50  0000 L CNN
+F 1 "Test_Point" H 21208 2054 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 21350 2025 50  0001 C CNN
+F 3 "~" H 21350 2025 50  0001 C CNN
+	1    21150 2025
+	1    0    0    -1  
+$EndComp
+Connection ~ 21150 2025
+Wire Wire Line
+	21150 2025 21050 2025
+Wire Wire Line
+	2725 4125 1675 4125
+Wire Wire Line
+	1675 6735 2725 6735
+Wire Wire Line
+	1675 6845 2725 6845
+Wire Wire Line
+	2725 4250 1675 4250
+Wire Wire Line
+	2725 4375 1675 4375
+Text Label 1675 3500 0    60   ~ 0
+TH2_OUT
+Text Label 1675 4250 0    60   ~ 0
+TH1_OUT
+Wire Wire Line
+	1525 3875 2725 3875
+Text Label 18900 4125 0    60   ~ 0
+USB_DATA_N
+Text Label 18900 4225 0    60   ~ 0
+USB_DATA_P
+$Sheet
+S 11050 8900 1050 1250
+U 5D6F5943
+F0 "4-20ma inputs" 60
+F1 "4-20ma inputs.sch" 60
+F2 "F1+" I L 11050 9050 60 
+F3 "F1-" I L 11050 9150 60 
+F4 "F3+" I L 11050 9650 60 
+F5 "F3-" I L 11050 9750 60 
+F6 "F3op" I R 12100 9700 60 
+F7 "F1op" I R 12100 9100 60 
+F8 "F2+" I L 11050 9350 60 
+F9 "F2-" I L 11050 9450 60 
+F10 "F2op" I R 12100 9400 60 
+F11 "F4+" I L 11050 9950 60 
+F12 "F4-" I L 11050 10050 60 
+F13 "F4op" I R 12100 10000 60 
+$EndSheet
+$Sheet
+S 8150 4875 1500 1050
+U 5D8D08E6
+F0 "USB2502 Hub Controller" 60
+F1 "USB2502 Hub Controller.sch" 60
+F2 "USBDP0" I L 8150 5475 60 
+F3 "USBDN0" I L 8150 5325 60 
+F4 "USBDP1" I R 9650 5275 60 
+F5 "USBDN1" I R 9650 5125 60 
+F6 "USBDP2" I R 9650 5725 60 
+F7 "USBDN2" I R 9650 5575 60 
+$EndSheet
+Wire Wire Line
+	9650 5125 10400 5125
+Wire Wire Line
+	9650 5275 10400 5275
+Wire Wire Line
+	9650 5575 10400 5575
+Wire Wire Line
+	9650 5725 10400 5725
+Wire Wire Line
+	8150 5325 7350 5325
+Wire Wire Line
+	8150 5475 7350 5475
+Text Label 7350 5325 0    60   ~ 0
+USB_DATA_N
+Text Label 7350 5475 0    60   ~ 0
+USB_DATA_P
+Text Label 10400 5125 2    60   ~ 0
+USB_DEBUG_N
+Text Label 10400 5275 2    60   ~ 0
+USB_DEBUG_P
+Text Label 10400 5575 2    60   ~ 0
+STM_USB_DATA_N
+Text Label 10400 5725 2    60   ~ 0
+STM_USB_DATA_P
+Wire Wire Line
+	12100 9100 12600 9100
+Wire Wire Line
+	12100 9400 12600 9400
+Wire Wire Line
+	12100 9700 12600 9700
+Wire Wire Line
+	12100 10000 12600 10000
+Text Label 12600 9100 2    60   ~ 0
+F1_OUT
+Text Label 16760 12550 2    60   ~ 0
+AIN_BUF_CH4
+Text Label 16750 12100 2    60   ~ 0
+AIN_BUF_CH1
+Text Label 16750 12250 2    60   ~ 0
+AIN_BUF_CH2
+Wire Wire Line
+	20875 5975 20400 5975
+Wire Wire Line
+	20400 5875 20400 5975
+Connection ~ 20400 5975
+Text Label 12600 9400 2    60   ~ 0
+F2_OUT
+Text Label 12600 9700 2    60   ~ 0
+F3_OUT
+Text Label 12600 10000 2    60   ~ 0
+F4_OUT
+Text Label 5375 9550 2    60   ~ 0
+TH3_OUT
+Wire Wire Line
+	4825 9850 5375 9850
+Wire Wire Line
+	4825 9550 5375 9550
+Wire Wire Line
+	4825 9250 5375 9250
+Wire Wire Line
+	4825 8950 5375 8950
+$Sheet
+S 3475 8750 1350 1300
+U 5D6F87E7
+F0 "Thermocouple inputs" 60
+F1 "Thermocouple inputs.sch" 60
+F2 "TH1+" I L 3475 8900 60 
+F3 "TH1-" I L 3475 9000 60 
+F4 "TH1op" I R 4825 8950 60 
+F5 "TH2op" I R 4825 9250 60 
+F6 "TH2-" I L 3475 9300 60 
+F7 "TH2+" I L 3475 9200 60 
+F8 "TH3op" I R 4825 9550 60 
+F9 "TH3-" I L 3475 9600 60 
+F10 "TH3+" I L 3475 9500 60 
+F11 "TH4op" I R 4825 9850 60 
+F12 "TH4-" I L 3475 9900 60 
+F13 "TH4+" I L 3475 9800 60 
+$EndSheet
+Text Label 1675 6150 0    60   ~ 0
+GPIO2
+Wire Wire Line
+	2725 6150 1675 6150
+$Sheet
+S 14600 11925 1525 750 
+U 5BC9D0F6
+F0 "InputConditioning" 60
+F1 "InputConditioning.sch" 60
+F2 "5V_SENSE1" I L 14600 12100 60 
+F3 "5V_ADC_CH1" O R 16125 12100 60 
+F4 "5V_SENSE2" I L 14600 12250 60 
+F5 "5V_ADC_CH2" O R 16125 12250 60 
+F6 "5V_SENSE3" I L 14600 12400 60 
+F7 "5V_ADC_CH3" O R 16125 12400 60 
+F8 "5V_SENSE4" I L 14600 12550 60 
+F9 "5V_ADC_CH4" O R 16125 12550 60 
+$EndSheet
+Wire Wire Line
+	16125 12100 16765 12100
+Wire Wire Line
+	16125 12250 16765 12250
+Wire Wire Line
+	16125 12400 16765 12400
+Wire Wire Line
+	16125 12550 16760 12550
+Wire Wire Line
+	14125 12100 14600 12100
+Wire Wire Line
+	14125 12250 14600 12250
+Wire Wire Line
+	14125 12400 14600 12400
+Wire Wire Line
+	14125 12550 14600 12550
+Text Label 14125 12400 0    60   ~ 0
+AIN_CH3
+Text Label 14125 12550 0    60   ~ 0
+AIN_CH4
+Text Label 16760 12400 2    60   ~ 0
+AIN_BUF_CH3
+$Comp
+L Sensi_Board-rescue:Conn_03x32_DIN41612-Devtank J3
+U 2 1 5C5BC569
+P 20200 2725
+F 0 "J3" H 20125 950 50  0000 L CNN
+F 1 "Conn_03x32_DIN41612" H 20125 850 50  0000 L CNN
+F 2 "Devtank_PCB_Lib:Socket_DIN41612-CaseC1-full-Male-96Pin-3rows_correct" H 20200 2725 50  0001 C CNN
+F 3 "~" H 20200 2725 50  0001 C CNN
+F 4 "717-002" H 5050 -400 50  0001 C CNN "Devtank"
+	2    20200 2725
+	1    0    0    -1  
+$EndComp
+NoConn ~ 17200 1325
+NoConn ~ 17200 1425
+NoConn ~ 17200 1625
+NoConn ~ 17200 1725
+NoConn ~ 17200 1925
+NoConn ~ 17200 2025
+NoConn ~ 17200 2225
+NoConn ~ 17200 2325
+NoConn ~ 17200 3125
+NoConn ~ 17200 3025
+NoConn ~ 17200 2925
+NoConn ~ 17200 2825
+NoConn ~ 17200 2725
+NoConn ~ 17200 2625
+NoConn ~ 17200 2525
+NoConn ~ 17200 2425
+NoConn ~ 17200 4325
+NoConn ~ 17200 4225
+NoConn ~ 17200 4125
+NoConn ~ 17200 4025
+NoConn ~ 17200 3925
+NoConn ~ 17200 3825
+NoConn ~ 17200 3725
+NoConn ~ 17200 3625
+NoConn ~ 17200 3525
+NoConn ~ 17200 3425
+NoConn ~ 17200 3325
+NoConn ~ 18900 2225
+NoConn ~ 18900 2325
+NoConn ~ 18900 2525
+NoConn ~ 18900 2625
+NoConn ~ 18900 2725
+NoConn ~ 18900 2825
+NoConn ~ 18900 2925
+NoConn ~ 18900 3025
+NoConn ~ 18900 3125
+NoConn ~ 18900 3225
+NoConn ~ 18900 3325
+NoConn ~ 18900 3525
+NoConn ~ 18900 3625
+NoConn ~ 18900 3825
+NoConn ~ 20500 2325
+NoConn ~ 20500 2425
+NoConn ~ 20500 2625
+NoConn ~ 20500 2725
+NoConn ~ 20500 2925
+NoConn ~ 20500 3025
+NoConn ~ 20500 3125
+NoConn ~ 20500 3225
+NoConn ~ 20500 3325
+NoConn ~ 20500 3425
+NoConn ~ 20500 3625
+NoConn ~ 20500 3725
+NoConn ~ 20500 3825
+NoConn ~ 20500 3925
+NoConn ~ 20500 4025
+NoConn ~ 20500 4125
+NoConn ~ 20500 4225
+NoConn ~ 20500 4325
+Wire Wire Line
+	3475 8900 3075 8900
+Wire Wire Line
+	3475 9000 3075 9000
+Text Label 12100 12575 2    60   ~ 0
+STM_SPI1_MISO
+Text Label 12100 12875 2    60   ~ 0
+STM_SPI1_MOSI
+Text Label 12100 13175 2    60   ~ 0
+STM_SPI1_SCK
+Wire Wire Line
+	11400 12575 12100 12575
+Wire Wire Line
+	11400 12875 12100 12875
+Wire Wire Line
+	11400 13175 12100 13175
+$Comp
+L sensors:LM75B U6
+U 1 1 5F9AD48D
+P 3475 12025
+F 0 "U6" H 3475 12706 50  0000 C CNN
+F 1 "LM75B" H 3475 12615 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3475 12025 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm75b.pdf" H 3475 12025 50  0001 C CNN
+F 4 "155-005" H 3475 12025 50  0001 C CNN "Devtank"
+	1    3475 12025
+	-1   0    0    -1  
+$EndComp
+$Comp
+L device:C C23
+U 1 1 5F9AF17F
+P 3875 11350
+F 0 "C23" V 4127 11350 50  0000 C CNN
+F 1 "100nF" V 4036 11350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3913 11200 50  0001 C CNN
+F 3 "" H 3875 11350 50  0001 C CNN
+F 4 "105-019" H 3875 11350 50  0001 C CNN "Devtank"
+	1    3875 11350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:R R32
+U 1 1 5F9AF5B1
+P 2550 11650
+F 0 "R32" H 2620 11696 50  0000 L CNN
+F 1 "0R" H 2620 11605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2480 11650 50  0001 C CNN
+F 3 "" H 2550 11650 50  0001 C CNN
+F 4 "101-005" H 2550 11650 50  0001 C CNN "Devtank"
+	1    2550 11650
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R34
+U 1 1 5F9AFAAF
+P 2800 11650
+F 0 "R34" H 2870 11696 50  0000 L CNN
+F 1 "0R" H 2870 11605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 11650 50  0001 C CNN
+F 3 "" H 2800 11650 50  0001 C CNN
+F 4 "101-005" H 2800 11650 50  0001 C CNN "Devtank"
+	1    2800 11650
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R33
+U 1 1 5F9B0B45
+P 2550 12375
+F 0 "R33" H 2620 12421 50  0000 L CNN
+F 1 "DNF" H 2620 12330 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2480 12375 50  0001 C CNN
+F 3 "" H 2550 12375 50  0001 C CNN
+	1    2550 12375
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R36
+U 1 1 5F9B0B4B
+P 2800 12375
+F 0 "R36" H 2870 12421 50  0000 L CNN
+F 1 "DNF" H 2870 12330 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 12375 50  0001 C CNN
+F 3 "" H 2800 12375 50  0001 C CNN
+	1    2800 12375
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R30
+U 1 1 5FA0CEFB
+P 2300 11650
+F 0 "R30" H 2370 11696 50  0000 L CNN
+F 1 "0R" H 2370 11605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2230 11650 50  0001 C CNN
+F 3 "" H 2300 11650 50  0001 C CNN
+F 4 "101-005" H 2300 11650 50  0001 C CNN "Devtank"
+	1    2300 11650
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R31
+U 1 1 5FA0CF01
+P 2300 12375
+F 0 "R31" H 2370 12421 50  0000 L CNN
+F 1 "DNF" H 2370 12330 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2230 12375 50  0001 C CNN
+F 3 "" H 2300 12375 50  0001 C CNN
+	1    2300 12375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0243
+U 1 1 5FB88003
+P 4175 11400
+F 0 "#PWR0243" H 4175 11150 50  0001 C CNN
+F 1 "GND" H 4180 11227 50  0000 C CNN
+F 2 "" H 4175 11400 50  0001 C CNN
+F 3 "" H 4175 11400 50  0001 C CNN
+	1    4175 11400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0244
+U 1 1 5FB8858D
+P 3475 12575
+F 0 "#PWR0244" H 3475 12325 50  0001 C CNN
+F 1 "GND" H 3480 12402 50  0000 C CNN
+F 2 "" H 3475 12575 50  0001 C CNN
+F 3 "" H 3475 12575 50  0001 C CNN
+	1    3475 12575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 11800 2800 11925
+Wire Wire Line
+	2800 11925 3075 11925
+Wire Wire Line
+	3075 12025 2550 12025
+Wire Wire Line
+	2550 12025 2550 11800
+Wire Wire Line
+	3075 12125 2300 12125
+Wire Wire Line
+	2300 12125 2300 11800
+Wire Wire Line
+	2300 12225 2300 12125
+Connection ~ 2300 12125
+Wire Wire Line
+	2550 12225 2550 12025
+Connection ~ 2550 12025
+Wire Wire Line
+	2800 12225 2800 11925
+Connection ~ 2800 11925
+Wire Wire Line
+	3475 11525 3475 11350
+Wire Wire Line
+	3725 11350 3475 11350
+Connection ~ 3475 11350
+Wire Wire Line
+	3475 11350 3475 11150
+Wire Wire Line
+	4025 11350 4175 11350
+Wire Wire Line
+	4175 11350 4175 11400
+Wire Wire Line
+	3475 12575 3475 12525
+Wire Wire Line
+	2300 12525 2300 12650
+Wire Wire Line
+	2300 12650 2550 12650
+Wire Wire Line
+	2550 12650 2550 12525
+Wire Wire Line
+	2550 12650 2800 12650
+Wire Wire Line
+	2800 12650 2800 12525
+Connection ~ 2550 12650
+Wire Wire Line
+	2550 11400 2550 11500
+Wire Wire Line
+	2800 11500 2800 11400
+Wire Wire Line
+	2800 11400 2550 11400
+Connection ~ 2550 11400
+$Comp
+L power:GND #PWR0246
+U 1 1 60299934
+P 2550 12800
+F 0 "#PWR0246" H 2550 12550 50  0001 C CNN
+F 1 "GND" H 2555 12627 50  0000 C CNN
+F 2 "" H 2550 12800 50  0001 C CNN
+F 3 "" H 2550 12800 50  0001 C CNN
+	1    2550 12800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 11400 2550 11150
+Wire Wire Line
+	2550 12800 2550 12650
+NoConn ~ 3875 12125
+Wire Wire Line
+	3875 11925 4375 11925
+Wire Wire Line
+	3875 12025 4375 12025
+Text Label 4375 11925 2    60   ~ 0
+STM_SDA
+Text Label 4375 12025 2    60   ~ 0
+STM_SCL
+Wire Wire Line
+	4625 5600 5020 5600
+Wire Wire Line
+	4625 5750 5020 5750
+Text Label 5020 5600 2    60   ~ 0
+STM_SCL
+Text Label 5020 5750 2    60   ~ 0
+STM_SDA
+Wire Wire Line
+	4625 4700 5450 4700
+Wire Wire Line
+	4625 4900 5450 4900
+Wire Wire Line
+	4625 5100 5450 5100
+Text Label 5450 4700 2    60   ~ 0
+STM_SPI1_SCK
+Text Label 5450 4900 2    60   ~ 0
+STM_SPI1_MISO
+Text Label 5450 5100 2    60   ~ 0
+STM_SPI1_MOSI
+Wire Wire Line
+	2300 11500 2300 11400
+Wire Wire Line
+	2300 11400 2550 11400
+$Comp
+L power:GND #PWR0133
+U 1 1 5E154482
+P 14525 15525
+F 0 "#PWR0133" H 14525 15275 50  0001 C CNN
+F 1 "GND" H 14530 15352 50  0000 C CNN
+F 2 "" H 14525 15525 50  0001 C CNN
+F 3 "" H 14525 15525 50  0001 C CNN
+	1    14525 15525
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0204
+U 1 1 5E155366
+P 16225 15525
+F 0 "#PWR0204" H 16225 15375 50  0001 C CNN
+F 1 "+5V" H 16240 15698 50  0000 C CNN
+F 2 "" H 16225 15525 50  0001 C CNN
+F 3 "" H 16225 15525 50  0001 C CNN
+	1    16225 15525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Devtank:-5V #PWR0206
+U 1 1 5E15622A
+P 16650 15525
+F 0 "#PWR0206" H 16650 15375 50  0001 C CNN
+F 1 "-5V" H 16665 15698 50  0000 C CNN
+F 2 "" H 16650 15525 50  0000 C CNN
+F 3 "" H 16650 15525 50  0000 C CNN
+	1    16650 15525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Devtank:+3V3_BP #PWR0248
+U 1 1 5E159E04
+P 15375 15525
+F 0 "#PWR0248" H 15375 15375 50  0001 C CNN
+F 1 "+3V3_BP" H 15390 15698 50  0000 C CNN
+F 2 "" H 15375 15525 50  0000 C CNN
+F 3 "" H 15375 15525 50  0000 C CNN
+	1    15375 15525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Devtank:ADJ_DC #PWR0249
+U 1 1 5E15AE72
+P 17475 15525
+F 0 "#PWR0249" H 17475 15375 50  0001 C CNN
+F 1 "ADJ_DC" H 17490 15698 50  0000 C CNN
+F 2 "" H 17475 15525 50  0000 C CNN
+F 3 "" H 17475 15525 50  0000 C CNN
+	1    17475 15525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0250
+U 1 1 5E15C3D4
+P 17050 15525
+F 0 "#PWR0250" H 17050 15375 50  0001 C CNN
+F 1 "+12V" H 17065 15698 50  0000 C CNN
+F 2 "" H 17050 15525 50  0001 C CNN
+F 3 "" H 17050 15525 50  0001 C CNN
+	1    17050 15525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5E4F443F
+P 14525 15525
+F 0 "#FLG0104" H 14525 15600 50  0001 C CNN
+F 1 "PWR_FLAG" H 14525 15698 50  0000 C CNN
+F 2 "" H 14525 15525 50  0001 C CNN
+F 3 "" H 14525 15525 50  0001 C CNN
+	1    14525 15525
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5E53ED50
+P 14950 15525
+F 0 "#FLG0105" H 14950 15600 50  0001 C CNN
+F 1 "PWR_FLAG" H 14950 15698 50  0000 C CNN
+F 2 "" H 14950 15525 50  0001 C CNN
+F 3 "" H 14950 15525 50  0001 C CNN
+	1    14950 15525
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 5E5896B6
+P 15375 15525
+F 0 "#FLG0106" H 15375 15600 50  0001 C CNN
+F 1 "PWR_FLAG" H 15375 15698 50  0000 C CNN
+F 2 "" H 15375 15525 50  0001 C CNN
+F 3 "" H 15375 15525 50  0001 C CNN
+	1    15375 15525
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0107
+U 1 1 5E5D3FEF
+P 16225 15525
+F 0 "#FLG0107" H 16225 15600 50  0001 C CNN
+F 1 "PWR_FLAG" H 16225 15698 50  0000 C CNN
+F 2 "" H 16225 15525 50  0001 C CNN
+F 3 "" H 16225 15525 50  0001 C CNN
+	1    16225 15525
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0108
+U 1 1 5E61E906
+P 16650 15525
+F 0 "#FLG0108" H 16650 15600 50  0001 C CNN
+F 1 "PWR_FLAG" H 16650 15698 50  0000 C CNN
+F 2 "" H 16650 15525 50  0001 C CNN
+F 3 "" H 16650 15525 50  0001 C CNN
+	1    16650 15525
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0109
+U 1 1 5E6B4492
+P 17050 15525
+F 0 "#FLG0109" H 17050 15600 50  0001 C CNN
+F 1 "PWR_FLAG" H 17050 15698 50  0000 C CNN
+F 2 "" H 17050 15525 50  0001 C CNN
+F 3 "" H 17050 15525 50  0001 C CNN
+	1    17050 15525
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0110
+U 1 1 5E6FEDBC
+P 17475 15525
+F 0 "#FLG0110" H 17475 15600 50  0001 C CNN
+F 1 "PWR_FLAG" H 17475 15698 50  0000 C CNN
+F 2 "" H 17475 15525 50  0001 C CNN
+F 3 "" H 17475 15525 50  0001 C CNN
+	1    17475 15525
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	20400 5975 20400 6325
+Wire Wire Line
+	20400 6750 20400 6825
+$Comp
+L Devtank:+3V3_LOC #PWR0252
+U 1 1 5E7A148B
+P 15800 15525
+F 0 "#PWR0252" H 15800 15375 50  0001 C CNN
+F 1 "+3V3_LOC" H 15815 15698 50  0000 C CNN
+F 2 "" H 15800 15525 50  0000 C CNN
+F 3 "" H 15800 15525 50  0000 C CNN
+	1    15800 15525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E7A4F77
+P 15800 15525
+F 0 "#FLG0101" H 15800 15600 50  0001 C CNN
+F 1 "PWR_FLAG" H 15800 15698 50  0000 C CNN
+F 2 "" H 15800 15525 50  0001 C CNN
+F 3 "" H 15800 15525 50  0001 C CNN
+	1    15800 15525
+	-1   0    0    1   
+$EndComp
+$Sheet
+S 10275 12275 1125 3050
+U 5D71D9AB
+F0 "RTDinputs" 60
+F1 "RTDinputs.sch" 60
+F2 "MISO" I R 11400 12575 60 
+F3 "MOSI" I R 11400 12875 60 
+F4 "SCK" I R 11400 13175 60 
+F5 "RTD1_INT" I L 10275 12450 60 
+F6 "RTD1_CS" I L 10275 12550 60 
+F7 "RTD1_F-" I L 10275 12775 60 
+F8 "RTD1_R+" I L 10275 12875 60 
+F9 "RTD1_R-" I L 10275 12975 60 
+F10 "RTD1_F+" I L 10275 12675 60 
+F11 "RTD2_INT" I L 10275 13175 60 
+F12 "RTD2_CS" I L 10275 13275 60 
+F13 "RTD2_F-" I L 10275 13500 60 
+F14 "RTD2_R+" I L 10275 13600 60 
+F15 "RTD2_R-" I L 10275 13700 60 
+F16 "RTD2_F+" I L 10275 13400 60 
+F17 "RTD3_INT" I L 10275 13900 60 
+F18 "RTD3_CS" I L 10275 14000 60 
+F19 "RTD3_F-" I L 10275 14225 60 
+F20 "RTD3_R+" I L 10275 14325 60 
+F21 "RTD3_R-" I L 10275 14425 60 
+F22 "RTD3_F+" I L 10275 14125 60 
+F23 "RTD4_INT" I L 10275 14625 60 
+F24 "RTD4_CS" I L 10275 14725 60 
+F25 "RTD4_F-" I L 10275 14950 60 
+F26 "RTD4_R+" I L 10275 15050 60 
+F27 "RTD4_R-" I L 10275 15150 60 
+F28 "RTD4_F+" I L 10275 14850 60 
+$EndSheet
+Wire Wire Line
+	10275 12450 9830 12450
+Wire Wire Line
+	10275 12550 9830 12550
+Text Label 9850 12450 0    60   ~ 0
+RTD1_INT
+Text Label 9855 12550 0    60   ~ 0
+RTD1_CS
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP76
+U 1 1 60F7598C
+P 17550 9350
+F 0 "TP76" V 17550 9525 50  0000 L CNN
+F 1 "Test_Point" H 17608 9379 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 17750 9350 50  0001 C CNN
+F 3 "~" H 17750 9350 50  0001 C CNN
+	1    17550 9350
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP75
+U 1 1 60F75860
+P 17550 9200
+F 0 "TP75" V 17550 9375 50  0000 L CNN
+F 1 "Test_Point" H 17608 9229 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 17750 9200 50  0001 C CNN
+F 3 "~" H 17750 9200 50  0001 C CNN
+	1    17550 9200
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP74
+U 1 1 60F75736
+P 17550 9050
+F 0 "TP74" V 17550 9225 50  0000 L CNN
+F 1 "Test_Point" H 17608 9079 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 17750 9050 50  0001 C CNN
+F 3 "~" H 17750 9050 50  0001 C CNN
+	1    17550 9050
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP73
+U 1 1 60F753CA
+P 17550 8900
+F 0 "TP73" V 17550 9075 50  0000 L CNN
+F 1 "Test_Point" H 17608 8929 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 17750 8900 50  0001 C CNN
+F 3 "~" H 17750 8900 50  0001 C CNN
+	1    17550 8900
+	0    1    1    0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP68
+U 1 1 60F749E8
+P 14575 9350
+F 0 "TP68" V 14575 9525 50  0000 L CNN
+F 1 "Test_Point" H 14633 9379 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 14775 9350 50  0001 C CNN
+F 3 "~" H 14775 9350 50  0001 C CNN
+	1    14575 9350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP67
+U 1 1 60F748CC
+P 14575 9200
+F 0 "TP67" V 14575 9375 50  0000 L CNN
+F 1 "Test_Point" H 14633 9229 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 14775 9200 50  0001 C CNN
+F 3 "~" H 14775 9200 50  0001 C CNN
+	1    14575 9200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP66
+U 1 1 60F747A2
+P 14575 9050
+F 0 "TP66" V 14575 9225 50  0000 L CNN
+F 1 "Test_Point" H 14633 9079 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 14775 9050 50  0001 C CNN
+F 3 "~" H 14775 9050 50  0001 C CNN
+	1    14575 9050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP65
+U 1 1 60F74014
+P 14575 8900
+F 0 "TP65" V 14575 9075 50  0000 L CNN
+F 1 "Test_Point" H 14633 8929 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 14775 8900 50  0001 C CNN
+F 3 "~" H 14775 8900 50  0001 C CNN
+	1    14575 8900
+	0    -1   -1   0   
+$EndComp
+Text Label 14575 9350 0    60   ~ 0
+HS_CTRL_SW4
+Text Label 14575 9200 0    60   ~ 0
+HS_CTRL_SW3
+Text Label 14575 9050 0    60   ~ 0
+HS_CTRL_SW2
+Text Label 14575 8900 0    60   ~ 0
+HS_CTRL_SW1
+Text Label 17550 9350 2    60   ~ 0
+HS_OUT4
+Text Label 17550 9200 2    60   ~ 0
+HS_OUT3
+Text Label 17550 9050 2    60   ~ 0
+HS_OUT2
+Text Label 17550 8900 2    60   ~ 0
+HS_OUT1
+Wire Wire Line
+	15300 9350 14575 9350
+Wire Wire Line
+	15300 9200 14575 9200
+Wire Wire Line
+	15300 9050 14575 9050
+Wire Wire Line
+	15300 8900 14575 8900
+Wire Wire Line
+	16800 9350 17550 9350
+Wire Wire Line
+	16800 9200 17550 9200
+Wire Wire Line
+	16800 9050 17550 9050
+Wire Wire Line
+	16800 8900 17550 8900
+$Sheet
+S 15300 8725 1500 1400
+U 5CAF39AF
+F0 "HighSideOutputs" 60
+F1 "HighSideOutputs.sch" 60
+F2 "HSCTRL_CH1" I L 15300 8900 60 
+F3 "HS_CH1" O R 16800 8900 60 
+F4 "HSCTRL_CH2" I L 15300 9050 60 
+F5 "HS_CH2" O R 16800 9050 60 
+F6 "HSCTRL_CH3" I L 15300 9200 60 
+F7 "HS_CH3" O R 16800 9200 60 
+F8 "HSCTRL_CH4" I L 15300 9350 60 
+F9 "HS_CH4" O R 16800 9350 60 
+$EndSheet
+Text Notes 21150 10370 2    60   ~ 0
+GPIO + HS Switch\n
+$Comp
+L device:R R37
+U 1 1 5FD9EAEE
+P 22100 11200
+F 0 "R37" H 22170 11246 50  0000 L CNN
+F 1 "10K" H 22170 11155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 22030 11200 50  0001 C CNN
+F 3 "" H 22100 11200 50  0001 C CNN
+F 4 "101-010" H 22100 11200 50  0001 C CNN "Devtank"
+	1    22100 11200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22100 11050 22100 11000
+Text Notes 20305 12275 0    60   ~ 0
+Relay + HS Switch
+Wire Wire Line
+	10275 12775 9850 12775
+Wire Wire Line
+	9850 12675 10275 12675
+Wire Wire Line
+	10275 12875 9850 12875
+Wire Wire Line
+	10275 12975 9850 12975
+Text Label 9850 12675 0    60   ~ 0
+RTD1_F+
+Text Label 9850 12775 0    60   ~ 0
+RTD1_F-
+Text Label 9850 12875 0    60   ~ 0
+RTD1_R+
+Text Label 9850 12975 0    60   ~ 0
+RTD1_R-
+Wire Wire Line
+	10275 13500 9850 13500
+Wire Wire Line
+	9850 13400 10275 13400
+Wire Wire Line
+	10275 13600 9850 13600
+Wire Wire Line
+	10275 13700 9850 13700
+Text Label 9850 13400 0    60   ~ 0
+RTD2_F+
+Text Label 9850 13500 0    60   ~ 0
+RTD2_F-
+Text Label 9850 13600 0    60   ~ 0
+RTD2_R+
+Text Label 9850 13700 0    60   ~ 0
+RTD2_R-
+Wire Wire Line
+	10275 14225 9850 14225
+Wire Wire Line
+	9850 14125 10275 14125
+Wire Wire Line
+	10275 14325 9850 14325
+Text Label 9850 14125 0    60   ~ 0
+RTD3_F+
+Text Label 9850 14225 0    60   ~ 0
+RTD3_F-
+Text Label 9850 14325 0    60   ~ 0
+RTD3_R+
+Text Label 9850 14425 0    60   ~ 0
+RTD3_R-
+Wire Wire Line
+	8325 14650 8750 14650
+Wire Wire Line
+	10275 14950 9850 14950
+Wire Wire Line
+	9850 14850 10275 14850
+Wire Wire Line
+	10275 15050 9850 15050
+Wire Wire Line
+	10275 15150 9850 15150
+Text Label 9850 14850 0    60   ~ 0
+RTD4_F+
+Text Label 9850 14950 0    60   ~ 0
+RTD4_F-
+Text Label 9850 15050 0    60   ~ 0
+RTD4_R+
+Text Label 9850 15150 0    60   ~ 0
+RTD4_R-
+Wire Wire Line
+	10275 14425 9850 14425
+Wire Wire Line
+	8325 14450 8750 14450
+Text Label 3075 8900 0    60   ~ 0
+TH1+
+Text Label 3075 9000 0    60   ~ 0
+TH1-
+Wire Wire Line
+	3475 9200 3075 9200
+Wire Wire Line
+	3475 9300 3075 9300
+Text Label 3075 9200 0    60   ~ 0
+TH2+
+Text Label 3075 9300 0    60   ~ 0
+TH2-
+Wire Wire Line
+	3475 9500 3075 9500
+Wire Wire Line
+	3475 9600 3075 9600
+Text Label 3075 9500 0    60   ~ 0
+TH3+
+Text Label 3075 9600 0    60   ~ 0
+TH3-
+Wire Wire Line
+	3475 9900 3075 9900
+Wire Wire Line
+	3475 9800 3075 9800
+Text Label 3075 9800 0    60   ~ 0
+TH4+
+Text Label 3075 9900 0    60   ~ 0
+TH4-
+Wire Wire Line
+	1300 9050 900  9050
+Wire Wire Line
+	1300 9150 900  9150
+Text Label 900  9150 0    60   ~ 0
+TH1+
+Text Label 900  9050 0    60   ~ 0
+TH1-
+Wire Wire Line
+	1800 9050 2200 9050
+Text Label 2200 9450 2    60   ~ 0
+TH2+
+Text Label 2200 9550 2    60   ~ 0
+TH2-
+Wire Wire Line
+	1800 9450 2200 9450
+Wire Wire Line
+	1800 9550 2200 9550
+Wire Wire Line
+	1800 9250 2200 9250
+Wire Wire Line
+	1800 9350 2200 9350
+Text Label 2200 9250 2    60   ~ 0
+TH4+
+Text Label 2200 9350 2    60   ~ 0
+TH4-
+Wire Wire Line
+	11050 9050 10700 9050
+Wire Wire Line
+	11050 9150 10700 9150
+Wire Wire Line
+	11050 9350 10700 9350
+Wire Wire Line
+	11050 9450 10700 9450
+Text Label 10700 9350 0    60   ~ 0
+F2+
+Text Label 10700 9450 0    60   ~ 0
+F2-
+Wire Wire Line
+	11050 9650 10700 9650
+Wire Wire Line
+	11050 9750 10700 9750
+Text Label 10700 9650 0    60   ~ 0
+F3+
+Text Label 10700 9750 0    60   ~ 0
+F3-
+Wire Wire Line
+	11050 9950 10700 9950
+Wire Wire Line
+	11050 10050 10700 10050
+Text Label 10700 9950 0    60   ~ 0
+F4+
+Text Label 10700 10050 0    60   ~ 0
+F4-
+$Comp
+L power:GND #PWR0107
+U 1 1 5E9010FA
+P 1185 9615
+F 0 "#PWR0107" H 1185 9365 50  0001 C CNN
+F 1 "GND" H 1190 9442 50  0000 C CNN
+F 2 "" H 1185 9615 50  0001 C CNN
+F 3 "" H 1185 9615 50  0001 C CNN
+	1    1185 9615
+	-1   0    0    -1  
+$EndComp
+Text Label 20495 9775 0    60   ~ 0
+HS_OUT1
+Wire Wire Line
+	21475 9775 21875 9775
+Wire Wire Line
+	20975 9775 20495 9775
+Text Label 19875 11450 0    60   ~ 0
+HS_OUT4
+Wire Wire Line
+	20500 11650 19875 11650
+Text Label 19875 11650 0    60   ~ 0
+HS_OUT3
+$Comp
+L power:GND #PWR055
+U 1 1 5FC58EC6
+P 20325 11900
+F 0 "#PWR055" H 20325 11650 50  0001 C CNN
+F 1 "GND" H 20330 11727 50  0000 C CNN
+F 2 "" H 20325 11900 50  0001 C CNN
+F 3 "" H 20325 11900 50  0001 C CNN
+	1    20325 11900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 3750 5325 3750
+Wire Wire Line
+	4625 3875 5325 3875
+Text Label 5325 3750 2    60   ~ 0
+SWD_IO
+Text Label 5325 3875 2    60   ~ 0
+SWD_SCK
+$Comp
+L power:+3V3 #PWR024
+U 1 1 5DEB1F4F
+P 17650 6275
+F 0 "#PWR024" H 17650 6125 50  0001 C CNN
+F 1 "+3V3" H 17665 6448 50  0000 C CNN
+F 2 "" H 17650 6275 50  0001 C CNN
+F 3 "" H 17650 6275 50  0001 C CNN
+	1    17650 6275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 5DFF36AE
+P 2550 11150
+F 0 "#PWR0104" H 2550 11000 50  0001 C CNN
+F 1 "+3V3" H 2565 11323 50  0000 C CNN
+F 2 "" H 2550 11150 50  0001 C CNN
+F 3 "" H 2550 11150 50  0001 C CNN
+	1    2550 11150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0105
+U 1 1 5E20164B
+P 3475 11150
+F 0 "#PWR0105" H 3475 11000 50  0001 C CNN
+F 1 "+3V3" H 3490 11323 50  0000 C CNN
+F 2 "" H 3475 11150 50  0001 C CNN
+F 3 "" H 3475 11150 50  0001 C CNN
+	1    3475 11150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0113
+U 1 1 5E269C11
+P 22100 10975
+F 0 "#PWR0113" H 22100 10825 50  0001 C CNN
+F 1 "+3V3" H 22115 11148 50  0000 C CNN
+F 2 "" H 22100 10975 50  0001 C CNN
+F 3 "" H 22100 10975 50  0001 C CNN
+	1    22100 10975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0257
+U 1 1 5F845C63
+P 21125 11900
+F 0 "#PWR0257" H 21125 11650 50  0001 C CNN
+F 1 "GND" H 21130 11727 50  0000 C CNN
+F 2 "" H 21125 11900 50  0001 C CNN
+F 3 "" H 21125 11900 50  0001 C CNN
+	1    21125 11900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 12950 8775 12950
+Wire Wire Line
+	7425 12750 7850 12750
+Wire Wire Line
+	7850 12850 7425 12850
+Wire Wire Line
+	8350 12750 8775 12750
+Text Label 7425 12750 0    60   ~ 0
+RTD1_F+
+Text Label 8775 12950 2    60   ~ 0
+RTD1_F-
+Text Label 7425 12850 0    60   ~ 0
+RTD1_R+
+Text Label 8775 12750 2    60   ~ 0
+RTD1_R-
+Wire Wire Line
+	7850 13150 7425 13150
+Wire Wire Line
+	8775 13350 8350 13350
+Wire Wire Line
+	8350 13150 8775 13150
+Wire Wire Line
+	7850 13250 7425 13250
+Text Label 8775 13350 2    60   ~ 0
+RTD2_F+
+Text Label 7425 13150 0    60   ~ 0
+RTD2_F-
+Text Label 8775 13150 2    60   ~ 0
+RTD2_R+
+$Comp
+L power:GND #PWR0262
+U 1 1 5DCE6CB8
+P 7750 14725
+F 0 "#PWR0262" H 7750 14475 50  0001 C CNN
+F 1 "GND" H 7755 14552 50  0000 C CNN
+F 2 "" H 7750 14725 50  0001 C CNN
+F 3 "" H 7750 14725 50  0001 C CNN
+	1    7750 14725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8325 14250 8750 14250
+Wire Wire Line
+	7400 14450 7825 14450
+Wire Wire Line
+	7825 14550 7400 14550
+Wire Wire Line
+	8325 14050 8750 14050
+Text Label 7400 14450 0    60   ~ 0
+RTD4_F-
+$Comp
+L power:GND #PWR0263
+U 1 1 5DDB9CAA
+P 8400 14725
+F 0 "#PWR0263" H 8400 14475 50  0001 C CNN
+F 1 "GND" H 8405 14552 50  0000 C CNN
+F 2 "" H 8400 14725 50  0001 C CNN
+F 3 "" H 8400 14725 50  0001 C CNN
+	1    8400 14725
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	15630 13980 15635 13980
+Wire Wire Line
+	15635 13780 16270 13780
+Wire Wire Line
+	15635 13880 16270 13880
+Wire Wire Line
+	15635 13480 16260 13480
+$Comp
+L power:+3V3 #PWR0103
+U 1 1 5DE97AC6
+P 14950 15525
+F 0 "#PWR0103" H 14950 15375 50  0001 C CNN
+F 1 "+3V3" H 14965 15698 50  0000 C CNN
+F 2 "" H 14950 15525 50  0001 C CNN
+F 3 "" H 14950 15525 50  0001 C CNN
+	1    14950 15525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0203
+U 1 1 5E41A061
+P 21550 9875
+F 0 "#PWR0203" H 21550 9625 50  0001 C CNN
+F 1 "GND" H 21555 9702 50  0000 C CNN
+F 2 "" H 21550 9875 50  0001 C CNN
+F 3 "" H 21550 9875 50  0001 C CNN
+	1    21550 9875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0254
+U 1 1 5DABC198
+P 15810 14030
+F 0 "#PWR0254" H 15810 13780 50  0001 C CNN
+F 1 "GND" H 15815 13857 50  0000 C CNN
+F 2 "" H 15810 14030 50  0001 C CNN
+F 3 "" H 15810 14030 50  0001 C CNN
+	1    15810 14030
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15635 13580 15810 13580
+Text Label 5375 8950 2    60   ~ 0
+TH1_OUT
+Text Label 5375 9250 2    60   ~ 0
+TH2_OUT
+Text Label 5375 9850 2    60   ~ 0
+TH4_OUT
+Wire Wire Line
+	2725 4500 1675 4500
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP1
+U 1 1 5D94670E
+P 3075 8900
+F 0 "TP1" V 3075 9075 50  0000 L CNN
+F 1 "Test_Point" H 3133 8929 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3275 8900 50  0001 C CNN
+F 3 "~" H 3275 8900 50  0001 C CNN
+	1    3075 8900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP7
+U 1 1 5DA95AC2
+P 3075 9000
+F 0 "TP7" V 3075 9175 50  0000 L CNN
+F 1 "Test_Point" H 3133 9029 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3275 9000 50  0001 C CNN
+F 3 "~" H 3275 9000 50  0001 C CNN
+	1    3075 9000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP8
+U 1 1 5DB00F1A
+P 3075 9200
+F 0 "TP8" V 3075 9375 50  0000 L CNN
+F 1 "Test_Point" H 3133 9229 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3275 9200 50  0001 C CNN
+F 3 "~" H 3275 9200 50  0001 C CNN
+	1    3075 9200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP9
+U 1 1 5DB6BEB3
+P 3075 9300
+F 0 "TP9" V 3075 9475 50  0000 L CNN
+F 1 "Test_Point" H 3133 9329 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3275 9300 50  0001 C CNN
+F 3 "~" H 3275 9300 50  0001 C CNN
+	1    3075 9300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP10
+U 1 1 5DBD7165
+P 3075 9500
+F 0 "TP10" V 3075 9675 50  0000 L CNN
+F 1 "Test_Point" H 3133 9529 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3275 9500 50  0001 C CNN
+F 3 "~" H 3275 9500 50  0001 C CNN
+	1    3075 9500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP11
+U 1 1 5DC4216D
+P 3075 9600
+F 0 "TP11" V 3075 9775 50  0000 L CNN
+F 1 "Test_Point" H 3133 9629 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3275 9600 50  0001 C CNN
+F 3 "~" H 3275 9600 50  0001 C CNN
+	1    3075 9600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP12
+U 1 1 5DCAD545
+P 3075 9800
+F 0 "TP12" V 3075 9975 50  0000 L CNN
+F 1 "Test_Point" H 3133 9829 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3275 9800 50  0001 C CNN
+F 3 "~" H 3275 9800 50  0001 C CNN
+	1    3075 9800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP25
+U 1 1 5DD184FB
+P 3075 9900
+F 0 "TP25" V 3075 10075 50  0000 L CNN
+F 1 "Test_Point" H 3133 9929 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3275 9900 50  0001 C CNN
+F 3 "~" H 3275 9900 50  0001 C CNN
+	1    3075 9900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP26
+U 1 1 5DD83C77
+P 5375 8950
+F 0 "TP26" V 5375 9125 50  0000 L CNN
+F 1 "Test_Point" H 5433 8979 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5575 8950 50  0001 C CNN
+F 3 "~" H 5575 8950 50  0001 C CNN
+	1    5375 8950
+	0    1    -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP27
+U 1 1 5DDEEDBA
+P 5375 9250
+F 0 "TP27" V 5375 9425 50  0000 L CNN
+F 1 "Test_Point" H 5433 9279 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5575 9250 50  0001 C CNN
+F 3 "~" H 5575 9250 50  0001 C CNN
+	1    5375 9250
+	0    1    -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP28
+U 1 1 5DE59C23
+P 5375 9550
+F 0 "TP28" V 5375 9725 50  0000 L CNN
+F 1 "Test_Point" H 5433 9579 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5575 9550 50  0001 C CNN
+F 3 "~" H 5575 9550 50  0001 C CNN
+	1    5375 9550
+	0    1    -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP29
+U 1 1 5DEC4D5F
+P 5375 9850
+F 0 "TP29" V 5375 10025 50  0000 L CNN
+F 1 "Test_Point" H 5433 9879 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5575 9850 50  0001 C CNN
+F 3 "~" H 5575 9850 50  0001 C CNN
+	1    5375 9850
+	0    1    -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP60
+U 1 1 5DF35298
+P 12600 9100
+F 0 "TP60" V 12600 9275 50  0000 L CNN
+F 1 "Test_Point" H 12658 9129 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 12800 9100 50  0001 C CNN
+F 3 "~" H 12800 9100 50  0001 C CNN
+	1    12600 9100
+	0    1    -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP61
+U 1 1 5DFA069B
+P 12600 9400
+F 0 "TP61" V 12600 9575 50  0000 L CNN
+F 1 "Test_Point" H 12658 9429 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 12800 9400 50  0001 C CNN
+F 3 "~" H 12800 9400 50  0001 C CNN
+	1    12600 9400
+	0    1    -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP62
+U 1 1 5E00BACB
+P 12600 9700
+F 0 "TP62" V 12600 9875 50  0000 L CNN
+F 1 "Test_Point" H 12658 9729 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 12800 9700 50  0001 C CNN
+F 3 "~" H 12800 9700 50  0001 C CNN
+	1    12600 9700
+	0    1    -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP63
+U 1 1 5E076E6D
+P 12600 10000
+F 0 "TP63" V 12600 10175 50  0000 L CNN
+F 1 "Test_Point" H 12658 10029 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 12800 10000 50  0001 C CNN
+F 3 "~" H 12800 10000 50  0001 C CNN
+	1    12600 10000
+	0    1    -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP30
+U 1 1 5E0E4D84
+P 10700 9050
+F 0 "TP30" V 10700 9225 50  0000 L CNN
+F 1 "Test_Point" H 10758 9079 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10900 9050 50  0001 C CNN
+F 3 "~" H 10900 9050 50  0001 C CNN
+	1    10700 9050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP49
+U 1 1 5E1502B6
+P 10700 9150
+F 0 "TP49" V 10700 9325 50  0000 L CNN
+F 1 "Test_Point" H 10758 9179 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10900 9150 50  0001 C CNN
+F 3 "~" H 10900 9150 50  0001 C CNN
+	1    10700 9150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP51
+U 1 1 5E226AD3
+P 10700 9450
+F 0 "TP51" V 10700 9625 50  0000 L CNN
+F 1 "Test_Point" H 10758 9479 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10900 9450 50  0001 C CNN
+F 3 "~" H 10900 9450 50  0001 C CNN
+	1    10700 9450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP52
+U 1 1 5E291F8F
+P 10700 9650
+F 0 "TP52" V 10700 9825 50  0000 L CNN
+F 1 "Test_Point" H 10758 9679 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10900 9650 50  0001 C CNN
+F 3 "~" H 10900 9650 50  0001 C CNN
+	1    10700 9650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP53
+U 1 1 5E2FD406
+P 10700 9750
+F 0 "TP53" V 10700 9925 50  0000 L CNN
+F 1 "Test_Point" H 10758 9779 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10900 9750 50  0001 C CNN
+F 3 "~" H 10900 9750 50  0001 C CNN
+	1    10700 9750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP54
+U 1 1 5E3687E2
+P 10700 9950
+F 0 "TP54" V 10700 10125 50  0000 L CNN
+F 1 "Test_Point" H 10758 9979 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10900 9950 50  0001 C CNN
+F 3 "~" H 10900 9950 50  0001 C CNN
+	1    10700 9950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP59
+U 1 1 5E3D4B40
+P 10700 10050
+F 0 "TP59" V 10700 10225 50  0000 L CNN
+F 1 "Test_Point" H 10758 10079 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10900 10050 50  0001 C CNN
+F 3 "~" H 10900 10050 50  0001 C CNN
+	1    10700 10050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP91
+U 1 1 5E4F2C5F
+P 9830 12450
+F 0 "TP91" V 9830 12625 50  0000 L CNN
+F 1 "Test_Point" H 9888 12479 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10030 12450 50  0001 C CNN
+F 3 "~" H 10030 12450 50  0001 C CNN
+	1    9830 12450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP92
+U 1 1 5E4F2C65
+P 9830 12550
+F 0 "TP92" V 9830 12725 50  0000 L CNN
+F 1 "Test_Point" H 9888 12579 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10030 12550 50  0001 C CNN
+F 3 "~" H 10030 12550 50  0001 C CNN
+	1    9830 12550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP64
+U 1 1 5E55E10B
+P 9850 12675
+F 0 "TP64" V 9850 12850 50  0000 L CNN
+F 1 "Test_Point" H 9908 12704 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 12675 50  0001 C CNN
+F 3 "~" H 10050 12675 50  0001 C CNN
+	1    9850 12675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP69
+U 1 1 5E55E111
+P 9850 12775
+F 0 "TP69" V 9850 12950 50  0000 L CNN
+F 1 "Test_Point" H 9908 12804 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 12775 50  0001 C CNN
+F 3 "~" H 10050 12775 50  0001 C CNN
+	1    9850 12775
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP70
+U 1 1 5E5C9603
+P 9850 12875
+F 0 "TP70" V 9850 13050 50  0000 L CNN
+F 1 "Test_Point" H 9908 12904 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 12875 50  0001 C CNN
+F 3 "~" H 10050 12875 50  0001 C CNN
+	1    9850 12875
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP71
+U 1 1 5E5C9609
+P 9850 12975
+F 0 "TP71" V 9850 13150 50  0000 L CNN
+F 1 "Test_Point" H 9908 13004 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 12975 50  0001 C CNN
+F 3 "~" H 10050 12975 50  0001 C CNN
+	1    9850 12975
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP94
+U 1 1 5E637357
+P 9835 13275
+F 0 "TP94" V 9835 13450 50  0000 L CNN
+F 1 "Test_Point" H 9893 13304 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10035 13275 50  0001 C CNN
+F 3 "~" H 10035 13275 50  0001 C CNN
+	1    9835 13275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP72
+U 1 1 5E63735D
+P 9850 13400
+F 0 "TP72" V 9850 13575 50  0000 L CNN
+F 1 "Test_Point" H 9908 13429 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 13400 50  0001 C CNN
+F 3 "~" H 10050 13400 50  0001 C CNN
+	1    9850 13400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP77
+U 1 1 5E637363
+P 9850 13500
+F 0 "TP77" V 9850 13675 50  0000 L CNN
+F 1 "Test_Point" H 9908 13529 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 13500 50  0001 C CNN
+F 3 "~" H 10050 13500 50  0001 C CNN
+	1    9850 13500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP78
+U 1 1 5E637369
+P 9850 13600
+F 0 "TP78" V 9850 13775 50  0000 L CNN
+F 1 "Test_Point" H 9908 13629 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 13600 50  0001 C CNN
+F 3 "~" H 10050 13600 50  0001 C CNN
+	1    9850 13600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP79
+U 1 1 5E63736F
+P 9850 13700
+F 0 "TP79" V 9850 13875 50  0000 L CNN
+F 1 "Test_Point" H 9908 13729 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 13700 50  0001 C CNN
+F 3 "~" H 10050 13700 50  0001 C CNN
+	1    9850 13700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP95
+U 1 1 5E78065D
+P 9815 13900
+F 0 "TP95" V 9815 14075 50  0000 L CNN
+F 1 "Test_Point" H 9873 13929 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10015 13900 50  0001 C CNN
+F 3 "~" H 10015 13900 50  0001 C CNN
+	1    9815 13900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP96
+U 1 1 5E780663
+P 9810 14000
+F 0 "TP96" V 9810 14175 50  0000 L CNN
+F 1 "Test_Point" H 9868 14029 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10010 14000 50  0001 C CNN
+F 3 "~" H 10010 14000 50  0001 C CNN
+	1    9810 14000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP80
+U 1 1 5E780669
+P 9850 14125
+F 0 "TP80" V 9850 14300 50  0000 L CNN
+F 1 "Test_Point" H 9908 14154 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 14125 50  0001 C CNN
+F 3 "~" H 10050 14125 50  0001 C CNN
+	1    9850 14125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP82
+U 1 1 5E78066F
+P 9850 14225
+F 0 "TP82" V 9850 14400 50  0000 L CNN
+F 1 "Test_Point" H 9908 14254 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 14225 50  0001 C CNN
+F 3 "~" H 10050 14225 50  0001 C CNN
+	1    9850 14225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP83
+U 1 1 5E780675
+P 9850 14325
+F 0 "TP83" V 9850 14500 50  0000 L CNN
+F 1 "Test_Point" H 9908 14354 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 14325 50  0001 C CNN
+F 3 "~" H 10050 14325 50  0001 C CNN
+	1    9850 14325
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP84
+U 1 1 5E78067B
+P 9850 14425
+F 0 "TP84" V 9850 14600 50  0000 L CNN
+F 1 "Test_Point" H 9908 14454 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 14425 50  0001 C CNN
+F 3 "~" H 10050 14425 50  0001 C CNN
+	1    9850 14425
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP97
+U 1 1 5E7ED0ED
+P 9835 14625
+F 0 "TP97" V 9835 14800 50  0000 L CNN
+F 1 "Test_Point" H 9893 14654 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10035 14625 50  0001 C CNN
+F 3 "~" H 10035 14625 50  0001 C CNN
+	1    9835 14625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP98
+U 1 1 5E7ED0F3
+P 9830 14725
+F 0 "TP98" V 9830 14900 50  0000 L CNN
+F 1 "Test_Point" H 9888 14754 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10030 14725 50  0001 C CNN
+F 3 "~" H 10030 14725 50  0001 C CNN
+	1    9830 14725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP85
+U 1 1 5E7ED0F9
+P 9850 14850
+F 0 "TP85" V 9850 15025 50  0000 L CNN
+F 1 "Test_Point" H 9908 14879 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 14850 50  0001 C CNN
+F 3 "~" H 10050 14850 50  0001 C CNN
+	1    9850 14850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP88
+U 1 1 5E7ED0FF
+P 9850 14950
+F 0 "TP88" V 9850 15125 50  0000 L CNN
+F 1 "Test_Point" H 9908 14979 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 14950 50  0001 C CNN
+F 3 "~" H 10050 14950 50  0001 C CNN
+	1    9850 14950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP89
+U 1 1 5E7ED105
+P 9850 15050
+F 0 "TP89" V 9850 15225 50  0000 L CNN
+F 1 "Test_Point" H 9908 15079 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 15050 50  0001 C CNN
+F 3 "~" H 10050 15050 50  0001 C CNN
+	1    9850 15050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP90
+U 1 1 5E7ED10B
+P 9850 15150
+F 0 "TP90" V 9850 15325 50  0000 L CNN
+F 1 "Test_Point" H 9908 15179 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10050 15150 50  0001 C CNN
+F 3 "~" H 10050 15150 50  0001 C CNN
+	1    9850 15150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7750 14725 7750 14350
+Wire Wire Line
+	7750 14350 7825 14350
+Wire Wire Line
+	8325 14350 8400 14350
+Wire Wire Line
+	8400 14350 8400 14725
+Text Label 7400 14150 0    60   ~ 0
+RTD3_R+
+Text Label 7400 14050 0    60   ~ 0
+RTD3_F+
+Wire Wire Line
+	7400 14150 7825 14150
+Wire Wire Line
+	7825 14050 7400 14050
+Text Label 7400 14550 0    60   ~ 0
+RTD4_R-
+Text Label 8750 14250 2    60   ~ 0
+RTD3_F-
+Text Label 8750 14650 2    60   ~ 0
+RTD4_F+
+Text Label 8750 14450 2    60   ~ 0
+RTD4_R+
+Text Label 8750 14050 2    60   ~ 0
+RTD3_R-
+$Comp
+L power:GND #PWR0108
+U 1 1 5EE7D394
+P 7775 13425
+F 0 "#PWR0108" H 7775 13175 50  0001 C CNN
+F 1 "GND" H 7780 13252 50  0000 C CNN
+F 2 "" H 7775 13425 50  0001 C CNN
+F 3 "" H 7775 13425 50  0001 C CNN
+	1    7775 13425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0147
+U 1 1 5EE7D39F
+P 8425 13450
+F 0 "#PWR0147" H 8425 13200 50  0001 C CNN
+F 1 "GND" H 8430 13277 50  0000 C CNN
+F 2 "" H 8425 13450 50  0001 C CNN
+F 3 "" H 8425 13450 50  0001 C CNN
+	1    8425 13450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7775 13425 7775 13050
+Wire Wire Line
+	7775 13050 7850 13050
+Wire Wire Line
+	8350 13050 8425 13050
+Wire Wire Line
+	8425 13050 8425 13450
+Text Label 7425 13250 0    60   ~ 0
+RTD2_R-
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP99
+U 1 1 5DB957A7
+P 12100 12575
+F 0 "TP99" V 12100 12750 50  0000 L CNN
+F 1 "Test_Point" H 12158 12604 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 12300 12575 50  0001 C CNN
+F 3 "~" H 12300 12575 50  0001 C CNN
+	1    12100 12575
+	0    1    -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP106
+U 1 1 5DC01188
+P 12100 12875
+F 0 "TP106" V 12100 13050 50  0000 L CNN
+F 1 "Test_Point" H 12158 12904 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 12300 12875 50  0001 C CNN
+F 3 "~" H 12300 12875 50  0001 C CNN
+	1    12100 12875
+	0    1    -1   0   
+$EndComp
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP107
+U 1 1 5DC6CAD7
+P 12100 13175
+F 0 "TP107" V 12100 13350 50  0000 L CNN
+F 1 "Test_Point" H 12158 13204 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 12300 13175 50  0001 C CNN
+F 3 "~" H 12300 13175 50  0001 C CNN
+	1    12100 13175
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 5DC4CA85
+P 15110 14130
+F 0 "#PWR0150" H 15110 13880 50  0001 C CNN
+F 1 "GND" H 15115 13957 50  0000 C CNN
+F 2 "" H 15110 14130 50  0001 C CNN
+F 3 "" H 15110 14130 50  0001 C CNN
+	1    15110 14130
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15110 14130 15110 13980
+Wire Wire Line
+	15110 13880 15135 13880
+Wire Wire Line
+	21000 11650 21125 11650
+Wire Wire Line
+	21125 11650 21125 11750
+Text Label 21875 9775 2    60   ~ 0
+HS_OUT2
+Wire Wire Line
+	10275 13275 9835 13275
+Text Label 9850 13175 0    60   ~ 0
+RTD2_INT
+Text Label 9855 13275 0    60   ~ 0
+RTD2_CS
+Wire Wire Line
+	10275 13900 9815 13900
+Wire Wire Line
+	10275 14000 9810 14000
+Text Label 9850 13900 0    60   ~ 0
+RTD3_INT
+Text Label 9850 14000 0    60   ~ 0
+RTD3_CS
+Wire Wire Line
+	10275 14725 9830 14725
+Text Label 9850 14725 0    60   ~ 0
+RTD4_CS
+Wire Wire Line
+	10275 14625 9835 14625
+Text Label 9850 14625 0    60   ~ 0
+RTD4_INT
+Wire Wire Line
+	10275 13175 9835 13175
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP93
+U 1 1 5E637351
+P 9835 13175
+F 0 "TP93" V 9835 13350 50  0000 L CNN
+F 1 "Test_Point" H 9893 13204 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10035 13175 50  0001 C CNN
+F 3 "~" H 10035 13175 50  0001 C CNN
+	1    9835 13175
+	0    -1   -1   0   
+$EndComp
+Text Label 1675 5150 0    60   ~ 0
+RTD2_CS
+Text Label 1675 5025 0    60   ~ 0
+RTD2_INT
+Text Label 1675 4775 0    60   ~ 0
+RTD1_INT
+Text Label 1675 4900 0    60   ~ 0
+RTD1_CS
+Text Label 1675 5400 0    60   ~ 0
+RTD3_CS
+Text Label 1675 5650 0    60   ~ 0
+RTD4_CS
+Text Label 1675 5275 0    60   ~ 0
+RTD3_INT
+Text Label 1675 5525 0    60   ~ 0
+RTD4_INT
+Text Label 16270 13780 2    60   ~ 0
+AIN_CH1
+Text Label 16260 13480 2    60   ~ 0
+AIN_CH2
+Text Label 16270 13880 2    60   ~ 0
+AIN_CH3
+Text Label 16270 13980 2    60   ~ 0
+AIN_CH4
+Text Label 14125 12250 0    60   ~ 0
+AIN_CH2
+Text Label 14125 12100 0    60   ~ 0
+AIN_CH1
+Text Label 1675 4375 0    60   ~ 0
+AIN_BUF_CH4
+Text Label 1675 3750 0    60   ~ 0
+AIN_BUF_CH1
+Text Label 1675 4500 0    60   ~ 0
+AIN_BUF_CH2
+Text Label 1675 3625 0    60   ~ 0
+AIN_BUF_CH3
+Text Label 10700 9150 0    60   ~ 0
+F1-
+Text Label 10700 9050 0    60   ~ 0
+F1+
+Text Label 1675 3375 0    60   ~ 0
+F1_OUT
+Text Label 1675 3250 0    60   ~ 0
+F2_OUT
+Text Label 1675 3125 0    60   ~ 0
+F3_OUT
+Text Label 1675 3000 0    60   ~ 0
+F4_OUT
+Text Label 1675 4000 0    60   ~ 0
+TH4_OUT
+Text Label 1675 6250 0    60   ~ 0
+GPIO3
+Wire Wire Line
+	2725 6250 1675 6250
+Text Label 1675 6360 0    60   ~ 0
+GPIO4
+Wire Wire Line
+	2725 6360 1675 6360
+Wire Wire Line
+	4100 15325 5225 15325
+$Sheet
+S 2300 14525 1800 1080
+U 5C358B39
+F0 "DigitalIO" 60
+F1 "DigitalIO.sch" 60
+F2 "IO1_GPIOEXT" B L 2300 14725 60 
+F3 "IO2_GPIOEXT" B L 2300 14875 60 
+F4 "IO3_GPIOEXT" B L 2300 15025 60 
+F5 "IO1_GPIOINT" O R 4100 14725 60 
+F6 "IO2_GPIOINT" O R 4100 14875 60 
+F7 "IO3_GPIOINT" O R 4100 15025 60 
+F8 "IO4_GPIOEXT" B L 2300 15175 60 
+F9 "IO4_GPIOINT" O R 4100 15175 60 
+F10 "IO5_GPIOEXT" B L 2300 15325 60 
+F11 "IO5_GPIOINT" O R 4100 15325 60 
+F12 "IO6_GPIOEXT" B L 2300 15475 60 
+F13 "IO6_GPIOINT" O R 4100 15475 60 
+$EndSheet
+Text Label 5000 14725 2    60   ~ 0
+GPIO1
+Wire Wire Line
+	4100 14725 5225 14725
+Text Label 5000 14875 2    60   ~ 0
+GPIO2
+Wire Wire Line
+	4100 14875 5225 14875
+Wire Wire Line
+	4100 15025 5225 15025
+Wire Wire Line
+	4100 15175 5225 15175
+Text Label 5000 15175 2    60   ~ 0
+GPIO4
+Text Label 5000 15025 2    60   ~ 0
+GPIO3
+Text Label 21650 11450 2    60   ~ 0
+GPIO5_EXT
+Text Label 21650 11550 2    60   ~ 0
+GPIO6_EXT
+Text Label 20510 9575 0    60   ~ 0
+GPIO1_EXT
+Text Label 20510 9475 0    60   ~ 0
+GPIO2_EXT
+Text Label 20510 9375 0    60   ~ 0
+GPIO3_EXT
+Text Label 20510 9275 0    60   ~ 0
+GPIO4_EXT
+$Comp
+L power:+5V #PWR01
+U 1 1 5DB43786
+P 14995 13295
+F 0 "#PWR01" H 14995 13145 50  0001 C CNN
+F 1 "+5V" H 15010 13468 50  0000 C CNN
+F 2 "" H 14995 13295 50  0001 C CNN
+F 3 "" H 14995 13295 50  0001 C CNN
+	1    14995 13295
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14995 13295 14995 13480
+Wire Wire Line
+	14995 13480 15135 13480
+Wire Wire Line
+	15135 13580 14995 13580
+Wire Wire Line
+	14995 13580 14995 13480
+Connection ~ 14995 13480
+Wire Wire Line
+	15135 13680 14995 13680
+Connection ~ 14995 13580
+Wire Wire Line
+	15135 13780 14995 13780
+Wire Wire Line
+	14995 13580 14995 13680
+Connection ~ 14995 13680
+Wire Wire Line
+	14995 13680 14995 13780
+Text Label 21585 11850 2    60   ~ 0
+OUT1_NO
+Text Label 19870 11850 0    60   ~ 0
+OUT1_NC
+Wire Wire Line
+	21000 11850 21585 11850
+Wire Wire Line
+	20500 11850 19870 11850
+Wire Wire Line
+	19875 11450 20500 11450
+$Comp
+L Connector:Conn_02x06_Top_Bottom J1
+U 1 1 5DB808DE
+P 21175 9475
+F 0 "J1" H 21225 9892 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 21225 9801 50  0000 C CNN
+F 2 "Devtank_PCB_Lib:Molex2x06" H 21175 9475 50  0001 C CNN
+F 3 "~" H 21175 9475 50  0001 C CNN
+F 4 "711-004" H 21175 9475 50  0001 C CNN "Devtank"
+	1    21175 9475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_02x06_Top_Bottom J5
+U 1 1 5DB889DD
+P 15335 13680
+F 0 "J5" H 15385 14097 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 15385 14006 50  0000 C CNN
+F 2 "Devtank_PCB_Lib:Molex2x06" H 15335 13680 50  0001 C CNN
+F 3 "~" H 15335 13680 50  0001 C CNN
+F 4 "711-004" H 15335 13680 50  0001 C CNN "Devtank"
+	1    15335 13680
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_02x06_Top_Bottom J4
+U 1 1 5DC160D5
+P 1500 9250
+F 0 "J4" H 1550 9667 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 1550 9576 50  0000 C CNN
+F 2 "Devtank_PCB_Lib:Molex2x06" H 1500 9250 50  0001 C CNN
+F 3 "~" H 1500 9250 50  0001 C CNN
+F 4 "711-004" H 1500 9250 50  0001 C CNN "Devtank"
+	1    1500 9250
+	1    0    0    -1  
+$EndComp
+Connection ~ 15635 13980
+Wire Wire Line
+	15635 13980 16270 13980
+Wire Wire Line
+	15135 13980 15110 13980
+Connection ~ 15110 13980
+Wire Wire Line
+	15110 13980 15110 13880
+$Comp
+L Sensi_Board-rescue:Test_Point-Connector TP19
+U 1 1 5E3D18AC
+P 10700 9350
+F 0 "TP19" V 10700 9525 50  0000 L CNN
+F 1 "Test_Point" H 10758 9379 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10900 9350 50  0001 C CNN
+F 3 "~" H 10900 9350 50  0001 C CNN
+	1    10700 9350
+	0    -1   -1   0   
+$EndComp
+$Sheet
+S 2725 1375 1900 5775
+U 5F956DB7
+F0 "STM_Micro" 60
+F1 "STM_Micro.sch" 60
+F2 "NRST" I L 2725 1525 60 
+F3 "BOOT0" I L 2725 1675 60 
+F4 "HS_OUT1" O R 4625 1650 60 
+F5 "HS_OUT2" O R 4625 1775 60 
+F6 "HS_OUT3" O R 4625 1900 60 
+F7 "HS_OUT4" O R 4625 2025 60 
+F8 "DEBUG_UART_RX" I L 2725 1950 60 
+F9 "DEBUG_UART_TX" O L 2725 2100 60 
+F10 "ADC1" I L 2725 3000 60 
+F11 "ADC2" I L 2725 3125 60 
+F12 "USB_DATA_N" O L 2725 2425 60 
+F13 "USB_DATA_P" O L 2725 2575 60 
+F14 "ADC4" I L 2725 3375 60 
+F15 "ADC5" I L 2725 3500 60 
+F16 "ADC6" I L 2725 3625 60 
+F17 "ADC7" I L 2725 3750 60 
+F18 "ADC8" I L 2725 3875 60 
+F19 "ADC9" I L 2725 4000 60 
+F20 "ADC3" I L 2725 3250 60 
+F21 "RL1" O R 4625 3175 60 
+F22 "ADC10" I L 2725 4125 60 
+F23 "ADC11" I L 2725 4250 60 
+F24 "ADC12" I L 2725 4375 60 
+F25 "ADC13" I L 2725 4500 60 
+F26 "STM_SPI1_SCK" I R 4625 4700 60 
+F27 "STM_SPI1_MISO" I R 4625 4900 60 
+F28 "STM_SPI1_MOSI" I R 4625 5100 60 
+F29 "STM_SCL" I R 4625 5600 60 
+F30 "STM_SDA" I R 4625 5750 60 
+F31 "SWD_IO" I R 4625 3750 60 
+F32 "SWD_SCK" I R 4625 3875 60 
+F33 "RTD2_CS" B L 2725 5150 60 
+F34 "RTD1_CS" B L 2725 4900 60 
+F35 "STM_RES1" B L 2725 6735 60 
+F36 "RTD3_INT" B L 2725 5275 60 
+F37 "STM_RES2" B L 2725 6845 60 
+F38 "RTD4_INT" B L 2725 5525 60 
+F39 "RTD1_INT" T L 2725 4775 60 
+F40 "RTD4_CS" B L 2725 5650 60 
+F41 "RTD2_INT" B L 2725 5025 60 
+F42 "RTD3_CS" B L 2725 5400 60 
+F43 "GPIO1" B L 2725 6025 60 
+F44 "GPIO2" B L 2725 6150 60 
+F45 "GPIO3" B L 2725 6250 60 
+F46 "GPIO4" B L 2725 6360 60 
+F47 "GPIO6" B L 2725 5900 60 
+F48 "GPIO5" B L 2725 5775 60 
+$EndSheet
+Wire Wire Line
+	15810 14030 15810 13680
+Wire Wire Line
+	15635 13680 15810 13680
+Connection ~ 15810 13680
+Wire Wire Line
+	15810 13680 15810 13580
+$Comp
+L Connector:Conn_02x06_Top_Bottom J2
+U 1 1 5EC823D4
+P 20700 11550
+F 0 "J2" H 20750 11967 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 20750 11876 50  0000 C CNN
+F 2 "Devtank_PCB_Lib:Molex2x06" H 20700 11550 50  0001 C CNN
+F 3 "~" H 20700 11550 50  0001 C CNN
+F 4 "711-004" H 20700 11550 50  0001 C CNN "Devtank"
+	1    20700 11550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21000 11350 21125 11350
+Wire Wire Line
+	21125 11350 21125 11650
+Connection ~ 21125 11650
+Wire Wire Line
+	20920 9885 20920 9675
+Wire Wire Line
+	20920 9675 20975 9675
+Wire Wire Line
+	21475 9675 21550 9675
+Wire Wire Line
+	21550 9675 21550 9875
+NoConn ~ 21475 9275
+NoConn ~ 21475 9375
+NoConn ~ 21475 9475
+NoConn ~ 21475 9575
+Text Label 2200 9150 2    60   ~ 0
+TH3-
+Text Label 2200 9050 2    60   ~ 0
+TH3+
+Wire Wire Line
+	1800 9150 2200 9150
+Wire Wire Line
+	1185 9615 1185 9550
+Wire Wire Line
+	1185 9550 1300 9550
+Wire Wire Line
+	1185 9550 1185 9450
+Wire Wire Line
+	1185 9450 1300 9450
+Connection ~ 1185 9550
+Wire Wire Line
+	1185 9350 1300 9350
+Wire Wire Line
+	1185 9350 1185 9450
+Connection ~ 1185 9450
+Wire Wire Line
+	1185 9350 1185 9250
+Wire Wire Line
+	1185 9250 1300 9250
+Connection ~ 1185 9350
+Wire Wire Line
+	20325 11750 20500 11750
+Wire Wire Line
+	20325 11550 20500 11550
+Wire Wire Line
+	20325 11550 20325 11750
+Connection ~ 20325 11750
+Wire Wire Line
+	20325 11750 20325 11900
+Wire Wire Line
+	21000 11750 21125 11750
+Connection ~ 21125 11750
+Wire Wire Line
+	21125 11750 21125 11900
+Text Notes 1275 10020 0    79   ~ 0
+Thermocouple
+Text Notes 7655 12435 0    79   ~ 0
+RTD 1 + RTD 2\n
+Text Notes 7595 15130 0    79   ~ 0
+RTD 3 + RTD 4\n\n
+Text Notes 19410 13135 0    118  ~ 24
+Relay + PSU O/P Connector\n
+$Comp
+L Connector:Conn_02x07_Top_Bottom J8
+U 1 1 6025C137
+P 8050 13050
+F 0 "J8" H 8100 13567 50  0000 C CNN
+F 1 "Conn_02x07_Top_Bottom" H 8100 13476 50  0000 C CNN
+F 2 "Devtank_PCB_Lib:87831-1420_Molex_Milligrid" H 8050 13050 50  0001 C CNN
+F 3 "~" H 8050 13050 50  0001 C CNN
+	1    8050 13050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_02x07_Top_Bottom J7
+U 1 1 60397326
+P 8025 14350
+F 0 "J7" H 8075 14867 50  0000 C CNN
+F 1 "Conn_02x07_Top_Bottom" H 8075 14776 50  0000 C CNN
+F 2 "Devtank_PCB_Lib:87831-1420_Molex_Milligrid" H 8025 14350 50  0001 C CNN
+F 3 "~" H 8025 14350 50  0001 C CNN
+	1    8025 14350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 12950 7425 12950
+Text Label 7425 12950 0    60   ~ 0
+RTD1_R+
+Wire Wire Line
+	8350 12850 8775 12850
+Text Label 8775 12850 2    60   ~ 0
+RTD1_R-
+Wire Wire Line
+	7850 13350 7425 13350
+Text Label 7425 13350 0    60   ~ 0
+RTD2_R-
+Wire Wire Line
+	8350 13250 8775 13250
+Text Label 8775 13250 2    60   ~ 0
+RTD2_R+
+Wire Wire Line
+	8325 14150 8750 14150
+Text Label 8750 14150 2    60   ~ 0
+RTD3_R-
+Text Label 7400 14250 0    60   ~ 0
+RTD3_R+
+Wire Wire Line
+	7400 14250 7825 14250
+Wire Wire Line
+	8325 14550 8750 14550
+Text Label 8750 14550 2    60   ~ 0
+RTD4_R+
+Wire Wire Line
+	7825 14650 7400 14650
+Text Label 7400 14650 0    60   ~ 0
+RTD4_R-
+$Comp
+L Connector:Conn_02x10_Counter_Clockwise J11
+U 1 1 60977048
+P 8225 9525
+F 0 "J11" H 8275 10142 50  0000 C CNN
+F 1 "Conn_02x10_Counter_Clockwise" H 8275 10051 50  0001 C CNN
+F 2 "Devtank_PCB_Lib:Molex_Milligrid_2x10" H 8225 9525 50  0001 C CNN
+F 3 "~" H 8225 9525 50  0001 C CNN
+	1    8225 9525
+	1    0    0    -1  
+$EndComp
+Text Label 7675 9525 0    60   ~ 0
+F1+
+Wire Wire Line
+	8025 9525 7675 9525
+Text Label 7675 9125 0    60   ~ 0
+F2+
+Wire Wire Line
+	8025 9125 7675 9125
+Text Label 8875 9725 2    60   ~ 0
+F3+
+Wire Wire Line
+	8525 9725 8875 9725
+Text Label 8875 9625 2    60   ~ 0
+F3-
+$Comp
+L device:R R41
+U 1 1 60B84272
+P 7975 8525
+F 0 "R41" H 7905 8479 50  0000 R CNN
+F 1 "DNF" H 7905 8570 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7905 8525 50  0001 C CNN
+F 3 "" H 7975 8525 50  0001 C CNN
+	1    7975 8525
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:R R44
+U 1 1 60B930D7
+P 8300 8525
+F 0 "R44" H 8230 8479 50  0000 R CNN
+F 1 "0R" H 8230 8570 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8230 8525 50  0001 C CNN
+F 3 "" H 8300 8525 50  0001 C CNN
+	1    8300 8525
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR0106
+U 1 1 60CDA3BB
+P 7975 8300
+F 0 "#PWR0106" H 7975 8150 50  0001 C CNN
+F 1 "+12V" H 7990 8473 50  0000 C CNN
+F 2 "" H 7975 8300 50  0001 C CNN
+F 3 "" H 7975 8300 50  0001 C CNN
+	1    7975 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Devtank:ADJ_DC #PWR0114
+U 1 1 60CDBC5E
+P 8300 8300
+F 0 "#PWR0114" H 8300 8150 50  0001 C CNN
+F 1 "ADJ_DC" H 8315 8473 50  0000 C CNN
+F 2 "" H 8300 8300 50  0000 C CNN
+F 3 "" H 8300 8300 50  0000 C CNN
+	1    8300 8300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7975 8375 7975 8300
+Wire Wire Line
+	8300 8375 8300 8300
+Wire Wire Line
+	7975 8675 7975 8725
+Wire Wire Line
+	7975 8725 8300 8725
+Wire Wire Line
+	8300 8725 8300 8675
+Wire Wire Line
+	8300 8725 8675 8725
+Connection ~ 8300 8725
+Text Label 8675 8725 2    60   ~ 0
+F_Vs
+Wire Wire Line
+	8025 10025 7675 10025
+Text Label 7675 10025 0    60   ~ 0
+F_Vs
+$Comp
+L device:Jumper_NC_Small JP5
+U 1 1 6218F98C
+P 9300 9625
+F 0 "JP5" H 9300 9837 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 9300 9746 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 9300 9625 50  0001 C CNN
+F 3 "" H 9300 9625 50  0001 C CNN
+	1    9300 9625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 6218F993
+P 9700 9700
+F 0 "#PWR0116" H 9700 9450 50  0001 C CNN
+F 1 "GND" H 9705 9527 50  0000 C CNN
+F 2 "" H 9700 9700 50  0001 C CNN
+F 3 "" H 9700 9700 50  0001 C CNN
+	1    9700 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 61E06B63
+P 9700 9300
+F 0 "#PWR0115" H 9700 9050 50  0001 C CNN
+F 1 "GND" H 9705 9127 50  0000 C CNN
+F 2 "" H 9700 9300 50  0001 C CNN
+F 3 "" H 9700 9300 50  0001 C CNN
+	1    9700 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Jumper_NC_Small JP4
+U 1 1 619F61CC
+P 9300 9225
+F 0 "JP4" H 9300 9437 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 9300 9346 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 9300 9225 50  0001 C CNN
+F 3 "" H 9300 9225 50  0001 C CNN
+	1    9300 9225
+	1    0    0    -1  
+$EndComp
+Text Label 8875 9225 2    60   ~ 0
+F4-
+Wire Wire Line
+	8525 9325 8875 9325
+Text Label 8875 9325 2    60   ~ 0
+F4+
+$Comp
+L device:R R38
+U 1 1 636C6C7E
+P 19400 8950
+F 0 "R38" H 19450 9000 50  0000 L CNN
+F 1 "DNF" H 19450 8900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19330 8950 50  0001 C CNN
+F 3 "" H 19400 8950 50  0001 C CNN
+	1    19400 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0118
+U 1 1 638D2EA8
+P 19400 8675
+F 0 "#PWR0118" H 19400 8525 50  0001 C CNN
+F 1 "+3V3" H 19415 8848 50  0000 C CNN
+F 2 "" H 19400 8675 50  0001 C CNN
+F 3 "" H 19400 8675 50  0001 C CNN
+	1    19400 8675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19400 8800 19400 8725
+Wire Wire Line
+	19400 8725 19700 8725
+Wire Wire Line
+	19700 8725 19700 8800
+Connection ~ 19400 8725
+Wire Wire Line
+	19400 8725 19400 8675
+Wire Wire Line
+	19700 8725 20000 8725
+Wire Wire Line
+	20000 8725 20000 8800
+Connection ~ 19700 8725
+Wire Wire Line
+	20000 8725 20300 8725
+Wire Wire Line
+	20300 8725 20300 8800
+Connection ~ 20000 8725
+Wire Wire Line
+	20300 9275 20300 9100
+Wire Wire Line
+	20300 9275 20975 9275
+Wire Wire Line
+	20000 9375 20000 9100
+Wire Wire Line
+	20000 9375 20975 9375
+Wire Wire Line
+	19700 9475 19700 9100
+Wire Wire Line
+	19700 9475 20975 9475
+Wire Wire Line
+	19400 9575 19400 9100
+Wire Wire Line
+	19400 9575 20975 9575
+$Comp
+L device:R R170
+U 1 1 63D82655
+P 21775 11200
+F 0 "R170" H 21845 11246 50  0000 L CNN
+F 1 "10K" H 21845 11155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 21705 11200 50  0001 C CNN
+F 3 "" H 21775 11200 50  0001 C CNN
+F 4 "101-010" H 21775 11200 50  0001 C CNN "Devtank"
+	1    21775 11200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22100 11000 21775 11000
+Wire Wire Line
+	21775 11000 21775 11050
+Connection ~ 22100 11000
+Wire Wire Line
+	22100 11000 22100 10975
+Wire Wire Line
+	21775 11350 21775 11450
+Wire Wire Line
+	21000 11450 21775 11450
+Wire Wire Line
+	22100 11550 21000 11550
+Wire Wire Line
+	22100 11350 22100 11550
+$Comp
+L device:R R167
+U 1 1 643CDF8C
+P 19700 8950
+F 0 "R167" H 19750 9000 50  0000 L CNN
+F 1 "DNF" H 19750 8900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19630 8950 50  0001 C CNN
+F 3 "" H 19700 8950 50  0001 C CNN
+	1    19700 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R168
+U 1 1 64454056
+P 20000 8950
+F 0 "R168" H 20050 9000 50  0000 L CNN
+F 1 "DNF" H 20050 8900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 19930 8950 50  0001 C CNN
+F 3 "" H 20000 8950 50  0001 C CNN
+	1    20000 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R169
+U 1 1 644DA0E9
+P 20300 8950
+F 0 "R169" H 20350 9000 50  0000 L CNN
+F 1 "DNF" H 20350 8900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 20230 8950 50  0001 C CNN
+F 3 "" H 20300 8950 50  0001 C CNN
+	1    20300 8950
+	1    0    0    -1  
+$EndComp
+Text Label 1675 1675 0    60   ~ 0
+STM_BOOT0_OUT
+Text Notes 18350 875  0    118  ~ 24
+96Way Backplane Connector
+Text Notes 1875 10750 0    118  ~ 24
+Onboard temperature sensor
+Text Notes 8925 8125 0    118  ~ 24
+4 Channels of 4-20mA \n
+Text Notes 8800 11900 0    118  ~ 24
+4 Channels of RTD\n
+Text Notes 1950 8425 0    118  ~ 24
+4 Channels of Thermocouple\n
+Text Notes 2700 14150 0    118  ~ 24
+6x GPIO's
+Text Notes 19725 8000 0    118  ~ 24
+Misc Connectors
+Text Notes 15010 8385 0    118  ~ 24
+4 High Side Switches\n
+Text Notes 13910 11510 0    118  ~ 24
+4 Channels of Analogue Inputs (0-5V)\n
+Text Notes 8750 1475 0    118  ~ 24
+USB Debug
+Text Notes 8025 4550 0    118  ~ 24
+USB Hub Controller
+Text Notes 2775 925  0    118  ~ 24
+STM Microcontroller\n
+Text Notes 13860 1535 0    118  ~ 24
+Relay Output
+Text Notes 13200 5150 0    118  ~ 24
+Onboard EEPROM\n
+Text Notes 17000 7325 0    60   ~ 0
+Optional 3v3 from either backplane or onboard regulator
+Text Notes 19125 5350 0    118  ~ 24
+3.3V Regulator\n
+Wire Notes Line
+	500  7800 6200 7800
+Wire Notes Line
+	6200 3800 11700 3800
+Wire Notes Line
+	6200 6700 11700 6700
+Wire Notes Line
+	11700 4600 16600 4600
+Wire Notes Line
+	16600 500  16600 7600
+Wire Notes Line
+	22900 4900 16600 4900
+Wire Notes Line
+	18500 14700 13500 14700
+Wire Notes Line
+	13500 7600 13500 16000
+Wire Notes Line
+	6200 10900 18600 10900
+Wire Notes Line
+	11700 500  11700 7600
+Wire Notes Line
+	11700 7600 22900 7600
+Wire Notes Line
+	6200 500  6200 15900
+Wire Notes Line
+	600  13400 6200 13400
+$Comp
+L device:C C26
+U 1 1 619FB21B
+P 21050 13825
+F 0 "C26" H 21165 13871 50  0000 L CNN
+F 1 "100nF" H 21165 13780 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 21088 13675 50  0001 C CNN
+F 3 "" H 21050 13825 50  0001 C CNN
+	1    21050 13825
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C27
+U 1 1 619FBD37
+P 21525 13825
+F 0 "C27" H 21640 13871 50  0000 L CNN
+F 1 "100nF" H 21640 13780 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 21563 13675 50  0001 C CNN
+F 3 "" H 21525 13825 50  0001 C CNN
+	1    21525 13825
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C28
+U 1 1 61A7562C
+P 22000 13825
+F 0 "C28" H 22115 13871 50  0000 L CNN
+F 1 "100nF" H 22115 13780 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 22038 13675 50  0001 C CNN
+F 3 "" H 22000 13825 50  0001 C CNN
+	1    22000 13825
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C29
+U 1 1 61AEEE03
+P 22450 13825
+F 0 "C29" H 22565 13871 50  0000 L CNN
+F 1 "100nF" H 22565 13780 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 22488 13675 50  0001 C CNN
+F 3 "" H 22450 13825 50  0001 C CNN
+	1    22450 13825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Devtank:-5V #PWR061
+U 1 1 61B6F399
+P 21050 13575
+F 0 "#PWR061" H 21050 13425 50  0001 C CNN
+F 1 "-5V" H 21065 13748 50  0000 C CNN
+F 2 "" H 21050 13575 50  0000 C CNN
+F 3 "" H 21050 13575 50  0000 C CNN
+	1    21050 13575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR063
+U 1 1 61B70062
+P 21525 13575
+F 0 "#PWR063" H 21525 13425 50  0001 C CNN
+F 1 "+3V3" H 21540 13748 50  0000 C CNN
+F 2 "" H 21525 13575 50  0001 C CNN
+F 3 "" H 21525 13575 50  0001 C CNN
+	1    21525 13575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0120
+U 1 1 61B70A2B
+P 22000 13575
+F 0 "#PWR0120" H 22000 13425 50  0001 C CNN
+F 1 "+12V" H 22015 13748 50  0000 C CNN
+F 2 "" H 22000 13575 50  0001 C CNN
+F 3 "" H 22000 13575 50  0001 C CNN
+	1    22000 13575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21050 13675 21050 13575
+Wire Wire Line
+	21525 13675 21525 13575
+Wire Wire Line
+	22000 13675 22000 13575
+Wire Wire Line
+	22450 13675 22450 13575
+$Comp
+L power:GND #PWR062
+U 1 1 61D60CC4
+P 21050 14125
+F 0 "#PWR062" H 21050 13875 50  0001 C CNN
+F 1 "GND" H 21055 13952 50  0000 C CNN
+F 2 "" H 21050 14125 50  0001 C CNN
+F 3 "" H 21050 14125 50  0001 C CNN
+	1    21050 14125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21050 14125 21050 13975
+$Comp
+L power:GND #PWR064
+U 1 1 61DDC525
+P 21525 14125
+F 0 "#PWR064" H 21525 13875 50  0001 C CNN
+F 1 "GND" H 21530 13952 50  0000 C CNN
+F 2 "" H 21525 14125 50  0001 C CNN
+F 3 "" H 21525 14125 50  0001 C CNN
+	1    21525 14125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21525 14125 21525 13975
+$Comp
+L power:GND #PWR0121
+U 1 1 61E56A00
+P 22000 14125
+F 0 "#PWR0121" H 22000 13875 50  0001 C CNN
+F 1 "GND" H 22005 13952 50  0000 C CNN
+F 2 "" H 22000 14125 50  0001 C CNN
+F 3 "" H 22000 14125 50  0001 C CNN
+	1    22000 14125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22000 14125 22000 13975
+$Comp
+L power:GND #PWR0124
+U 1 1 61ED11D3
+P 22450 14125
+F 0 "#PWR0124" H 22450 13875 50  0001 C CNN
+F 1 "GND" H 22455 13952 50  0000 C CNN
+F 2 "" H 22450 14125 50  0001 C CNN
+F 3 "" H 22450 14125 50  0001 C CNN
+	1    22450 14125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22450 14125 22450 13975
+$Comp
+L Connector:Conn_02x06_Top_Bottom J6
+U 1 1 6203F036
+P 18525 13775
+F 0 "J6" H 18575 14192 50  0000 C CNN
+F 1 "Conn_02x06_Top_Bottom" H 18575 14101 50  0000 C CNN
+F 2 "Devtank_PCB_Lib:Molex2x06" H 18525 13775 50  0001 C CNN
+F 3 "~" H 18525 13775 50  0001 C CNN
+	1    18525 13775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18325 13575 17900 13575
+Text Label 17900 13575 0    60   ~ 0
+OUT1_NC
+Wire Wire Line
+	18825 13575 19250 13575
+Text Label 19250 13575 2    60   ~ 0
+OUT1_NO
+$Comp
+L device:C C24
+U 1 1 622A0012
+P 20575 13825
+F 0 "C24" H 20690 13871 50  0000 L CNN
+F 1 "100nF" H 20690 13780 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 20613 13675 50  0001 C CNN
+F 3 "" H 20575 13825 50  0001 C CNN
+	1    20575 13825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20575 13675 20575 13575
+$Comp
+L power:GND #PWR060
+U 1 1 622A001F
+P 20575 14125
+F 0 "#PWR060" H 20575 13875 50  0001 C CNN
+F 1 "GND" H 20580 13952 50  0000 C CNN
+F 2 "" H 20575 14125 50  0001 C CNN
+F 3 "" H 20575 14125 50  0001 C CNN
+	1    20575 14125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20575 14125 20575 13975
+$Comp
+L Devtank:ADJ_DC #PWR059
+U 1 1 62318966
+P 20575 13575
+F 0 "#PWR059" H 20575 13425 50  0001 C CNN
+F 1 "ADJ_DC" H 20590 13748 50  0000 C CNN
+F 2 "" H 20575 13575 50  0000 C CNN
+F 3 "" H 20575 13575 50  0000 C CNN
+	1    20575 13575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Devtank:-5V #PWR054
+U 1 1 6231DAC1
+P 19375 13575
+F 0 "#PWR054" H 19375 13425 50  0001 C CNN
+F 1 "-5V" H 19390 13748 50  0000 C CNN
+F 2 "" H 19375 13575 50  0000 C CNN
+F 3 "" H 19375 13575 50  0000 C CNN
+	1    19375 13575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR056
+U 1 1 6231DAC7
+P 19600 13575
+F 0 "#PWR056" H 19600 13425 50  0001 C CNN
+F 1 "+3V3" H 19615 13748 50  0000 C CNN
+F 2 "" H 19600 13575 50  0001 C CNN
+F 3 "" H 19600 13575 50  0001 C CNN
+	1    19600 13575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR057
+U 1 1 6231DACD
+P 19850 13575
+F 0 "#PWR057" H 19850 13425 50  0001 C CNN
+F 1 "+12V" H 19865 13748 50  0000 C CNN
+F 2 "" H 19850 13575 50  0001 C CNN
+F 3 "" H 19850 13575 50  0001 C CNN
+	1    19850 13575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Devtank:ADJ_DC #PWR041
+U 1 1 6231DAD3
+P 18025 13825
+F 0 "#PWR041" H 18025 13675 50  0001 C CNN
+F 1 "ADJ_DC" H 18040 13998 50  0000 C CNN
+F 2 "" H 18025 13825 50  0000 C CNN
+F 3 "" H 18025 13825 50  0000 C CNN
+	1    18025 13825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18025 13825 18200 13825
+Wire Wire Line
+	18200 13825 18200 13675
+Wire Wire Line
+	18200 13675 18325 13675
+Wire Wire Line
+	18325 13775 18250 13775
+Wire Wire Line
+	18250 13775 18250 13875
+Wire Wire Line
+	18250 13875 18325 13875
+Wire Wire Line
+	18250 13875 18250 13975
+Wire Wire Line
+	18250 13975 18325 13975
+Connection ~ 18250 13875
+Wire Wire Line
+	18325 14075 18250 14075
+Wire Wire Line
+	18250 14075 18250 13975
+Connection ~ 18250 13975
+Wire Wire Line
+	18250 14075 18250 14250
+Connection ~ 18250 14075
+$Comp
+L power:GND #PWR052
+U 1 1 6276B55D
+P 18250 14250
+F 0 "#PWR052" H 18250 14000 50  0001 C CNN
+F 1 "GND" H 18255 14077 50  0000 C CNN
+F 2 "" H 18250 14250 50  0001 C CNN
+F 3 "" H 18250 14250 50  0001 C CNN
+	1    18250 14250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR053
+U 1 1 627E794B
+P 18925 14275
+F 0 "#PWR053" H 18925 14025 50  0001 C CNN
+F 1 "GND" H 18930 14102 50  0000 C CNN
+F 2 "" H 18925 14275 50  0001 C CNN
+F 3 "" H 18925 14275 50  0001 C CNN
+	1    18925 14275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18825 13975 18925 13975
+Wire Wire Line
+	18925 13975 18925 14275
+$Comp
+L power:+5V #PWR0122
+U 1 1 629618A6
+P 22450 13575
+F 0 "#PWR0122" H 22450 13425 50  0001 C CNN
+F 1 "+5V" H 22465 13748 50  0000 C CNN
+F 2 "" H 22450 13575 50  0001 C CNN
+F 3 "" H 22450 13575 50  0001 C CNN
+	1    22450 13575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR058
+U 1 1 629DF74C
+P 20075 13575
+F 0 "#PWR058" H 20075 13425 50  0001 C CNN
+F 1 "+5V" H 20090 13748 50  0000 C CNN
+F 2 "" H 20075 13575 50  0001 C CNN
+F 3 "" H 20075 13575 50  0001 C CNN
+	1    20075 13575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18825 13675 19375 13675
+Wire Wire Line
+	19375 13675 19375 13575
+Wire Wire Line
+	18825 13775 19600 13775
+Wire Wire Line
+	19600 13775 19600 13575
+Wire Wire Line
+	18825 13875 19850 13875
+Wire Wire Line
+	19850 13875 19850 13575
+Wire Wire Line
+	18825 14075 20075 14075
+Wire Wire Line
+	20075 14075 20075 13575
+Wire Notes Line
+	17675 14700 17675 10900
+Wire Notes Line
+	17675 12600 22800 12600
+Wire Notes Line
+	18600 10900 18600 7600
+$Comp
+L power:GND #PWR0174
+U 1 1 5F88578C
+P 20920 9885
+F 0 "#PWR0174" H 20920 9635 50  0001 C CNN
+F 1 "GND" H 20925 9712 50  0000 C CNN
+F 2 "" H 20920 9885 50  0001 C CNN
+F 3 "" H 20920 9885 50  0001 C CNN
+	1    20920 9885
+	1    0    0    -1  
+$EndComp
+$Comp
+L Devtank:ADJ_DC #PWR0260
+U 1 1 63A0A06E
+P 20350 11075
+F 0 "#PWR0260" H 20350 10925 50  0001 C CNN
+F 1 "ADJ_DC" H 20365 11248 50  0000 C CNN
+F 2 "" H 20350 11075 50  0000 C CNN
+F 3 "" H 20350 11075 50  0000 C CNN
+	1    20350 11075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20500 11350 20350 11350
+Wire Wire Line
+	20350 11350 20350 11075
+$Comp
+L device:R R171
+U 1 1 60332419
+P 1200 2275
+F 0 "R171" H 1270 2321 50  0000 L CNN
+F 1 "1k5" H 1270 2230 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1130 2275 50  0001 C CNN
+F 3 "" H 1200 2275 50  0001 C CNN
+	1    1200 2275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2575 1200 2425
+Wire Wire Line
+	1200 2575 2725 2575
+$Comp
+L power:+3V3 #PWR0261
+U 1 1 603A8F9F
+P 1200 2025
+F 0 "#PWR0261" H 1200 1875 50  0001 C CNN
+F 1 "+3V3" H 1215 2198 50  0000 C CNN
+F 2 "" H 1200 2025 50  0001 C CNN
+F 3 "" H 1200 2025 50  0001 C CNN
+	1    1200 2025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2125 1200 2025
+Text Notes 100  2825 0    60   ~ 0
+NOTE: Fit 1k5 for 303/302 model. DNF for 072 model
+Wire Wire Line
+	8025 9925 7675 9925
+Text Label 7675 9925 0    60   ~ 0
+F_Vs
+Wire Wire Line
+	8025 9825 7675 9825
+Text Label 7675 9825 0    60   ~ 0
+F_Vs
+Wire Wire Line
+	8025 9725 7675 9725
+Text Label 7675 9725 0    60   ~ 0
+F_Vs
+Wire Wire Line
+	9700 9125 9700 9225
+Wire Wire Line
+	9700 9525 9700 9625
+Wire Wire Line
+	8525 9225 9200 9225
+Wire Wire Line
+	9400 9225 9700 9225
+Connection ~ 9700 9225
+Wire Wire Line
+	9700 9225 9700 9300
+Wire Wire Line
+	8525 9125 9700 9125
+Wire Wire Line
+	8525 9525 9700 9525
+Wire Wire Line
+	9400 9625 9700 9625
+Connection ~ 9700 9625
+Wire Wire Line
+	9700 9625 9700 9700
+Wire Wire Line
+	9200 9625 8525 9625
+Text Label 8875 10025 2    60   ~ 0
+F2-
+$Comp
+L device:Jumper_NC_Small JP3
+U 1 1 6106297D
+P 9300 10025
+F 0 "JP3" H 9300 10237 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 9300 10146 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 9300 10025 50  0001 C CNN
+F 3 "" H 9300 10025 50  0001 C CNN
+	1    9300 10025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 9925 9700 10025
+Wire Wire Line
+	8525 9925 9700 9925
+Wire Wire Line
+	9400 10025 9700 10025
+Connection ~ 9700 10025
+Wire Wire Line
+	9700 10025 9700 10100
+Wire Wire Line
+	9200 10025 8525 10025
+$Comp
+L power:GND #PWR0117
+U 1 1 610DB0AA
+P 9700 10100
+F 0 "#PWR0117" H 9700 9850 50  0001 C CNN
+F 1 "GND" H 9705 9927 50  0000 C CNN
+F 2 "" H 9700 10100 50  0001 C CNN
+F 3 "" H 9700 10100 50  0001 C CNN
+	1    9700 10100
+	1    0    0    -1  
+$EndComp
+Text Label 7675 9425 0    60   ~ 0
+F1-
+$Comp
+L device:Jumper_NC_Small JP2
+U 1 1 614AEA01
+P 7250 9425
+F 0 "JP2" H 7250 9637 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7250 9546 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 7250 9425 50  0001 C CNN
+F 3 "" H 7250 9425 50  0001 C CNN
+	1    7250 9425
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 9325 6850 9425
+Wire Wire Line
+	8025 9325 6850 9325
+Wire Wire Line
+	7150 9425 6850 9425
+Connection ~ 6850 9425
+Wire Wire Line
+	6850 9425 6850 9500
+Wire Wire Line
+	7350 9425 8025 9425
+$Comp
+L power:GND #PWR0119
+U 1 1 614AEA0D
+P 6850 9500
+F 0 "#PWR0119" H 6850 9250 50  0001 C CNN
+F 1 "GND" H 6855 9327 50  0000 C CNN
+F 2 "" H 6850 9500 50  0001 C CNN
+F 3 "" H 6850 9500 50  0001 C CNN
+	1    6850 9500
+	-1   0    0    -1  
+$EndComp
+Text Label 7675 9225 0    60   ~ 0
+F2_OUT
+Wire Wire Line
+	8025 9225 7675 9225
+Text Label 7675 9625 0    60   ~ 0
+F1_OUT
+Wire Wire Line
+	8025 9625 7675 9625
+Wire Wire Line
+	8525 9825 8875 9825
+Text Label 8875 9825 2    60   ~ 0
+F3_OUT
+Wire Wire Line
+	8525 9425 8875 9425
+Text Label 8875 9425 2    60   ~ 0
+F4_OUT
+Text Label 5000 15325 2    60   ~ 0
+GPIO5
+Text Label 5000 15475 2    60   ~ 0
+GPIO6
+Text Label 1675 5775 0    60   ~ 0
+GPIO5
+Text Label 1675 5900 0    60   ~ 0
+GPIO6
+$EndSCHEMATC

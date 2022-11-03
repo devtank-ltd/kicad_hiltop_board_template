@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Devtank)(type Legacy)(uri ${KIPRJMOD}/../common/Devtank_Schema_Lib/Devtank.lib)(options "")(descr ""))
+  (lib (name Sensi_Board-rescue)(type Legacy)(uri ${KIPRJMOD}/Sensi_Board-rescue.lib)(options "")(descr ""))
+)
