@@ -1,0 +1,22 @@
+Copyright Devtank Ltd 2022.
+
+This documentation describes Open Hardware and is Licensed under CERN-OHL-W v2.
+
+You may redistribute and modify this documentation under the terms of the CERN-OHL-W v2 (https://cern.ch/cern-ohl). This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN-OHL-W v2 for applicable conditions
+
+Source location: git@github.com:devtank-ltd/hiltop_motherboard.git 
+
+As per CERN-OHL-W v2 section 4.1, should You produce hardware based on these sources, You must maintain the   Source Location visible on the external case of the HILTOP or other product you make using this documentation.
+
+This folder contains a reference HILTOP plug-in card design schematics & PCB layout. You may use this design as a starting template for developing new plug-in modules for HILTOP.
+
+You will need Kicad to open hardware design files.
+
+HILTOP products and other test and measurement solutions can be purchased directly from Devtank Ltd.
+
+Please contact:
+Tim Telford
+CTO - Devtank Ltd
++44 (0)1332 650944
+
+
